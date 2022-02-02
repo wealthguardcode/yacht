@@ -81,7 +81,7 @@ export default function Header() {
             leave='transition ease-in duration-75'
             leaveFrom='transform opacity-100 scale-100'
             leaveTo='transform opacity-0 scale-95'>
-            <Popover.Panel className='sm:hidden'>
+            <Popover.Panel className='sm:hidden absolute z-10 bg-white w-full rounded-b-lg'>
               <div className='pt-2 pb-3 space-y-1'>
                 {/* Current: "bg-red-50 border-red-500 text-red-700", Default: "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700" */}
                 <Link href='/'>
