@@ -65,8 +65,6 @@ export default function Home() {
             <img
               src='/images/home/slider/yacht-1.jpeg'
               className='block w-full carousel-image'
-              placeholder='blur'
-              blurDataURL
               alt='Yacht on the Water'
             />
           </div>
@@ -74,8 +72,6 @@ export default function Home() {
             <img
               src='/images/home/slider/yacht-2.jpeg'
               className='block w-full carousel-image'
-              placeholder='blur'
-              blurDataURL
               alt='Yacht in the Sunset'
             />
           </div>
@@ -83,8 +79,6 @@ export default function Home() {
             <img
               src='/images/home/slider/yacht-3.jpeg'
               className='block w-full carousel-image'
-              placeholder='blur'
-              blurDataURL
               alt='Yacht in Action'
             />
           </div>
@@ -92,8 +86,6 @@ export default function Home() {
             <img
               src='/images/home/slider/yacht-4.jpeg'
               className='block w-full carousel-image'
-              placeholder='blur'
-              blurDataURL
               alt='Yacht closeup'
             />
           </div>
