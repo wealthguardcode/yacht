@@ -74,8 +74,10 @@ export default function Home() {
             <Image
               src='/images/home/slider/yacht-1.jpeg'
               className='block w-full'
-              height={800}
-              width={2000}
+              height={750}
+              width={1950}
+              placeholder='blur'
+              blurDataURL
               alt='Yacht on the Water'
             />
           </div>
@@ -83,8 +85,10 @@ export default function Home() {
             <Image
               src='/images/home/slider/yacht-2.jpeg'
               className='block w-full'
-              height={800}
-              width={2000}
+              height={750}
+              width={1950}
+              placeholder='blur'
+              blurDataURL
               alt='Yacht in the Sunset'
             />
           </div>
@@ -92,8 +96,10 @@ export default function Home() {
             <Image
               src='/images/home/slider/yacht-3.jpeg'
               className='block w-full'
-              height={800}
-              width={2000}
+              height={750}
+              width={1950}
+              placeholder='blur'
+              blurDataURL
               alt='Yacht in Action'
             />
           </div>
@@ -101,8 +107,10 @@ export default function Home() {
             <Image
               src='/images/home/slider/yacht-4.jpeg'
               className='block w-full'
-              height={800}
-              width={2000}
+              height={750}
+              width={1950}
+              placeholder='blur'
+              blurDataURL
               alt='Yacht closeup'
             />
           </div>
@@ -167,7 +175,17 @@ export default function Home() {
                 </div>
                 <div className='w-full bg-white h-48' />
               </div>
-              <div className='relative py-32'>
+              <div className='relative py-16 lg:py-24'>
+                <div className='my-4'>
+                  <Image
+                    src='/images/wig-logo.png'
+                    alt='WealthGuard Logo'
+                    className=''
+                    height={70}
+                    width={70}
+                  />
+                </div>
+
                 <h1 className='text-4xl font-extrabold tracking-wider text-red-800 md:text-6xl'>
                   Wealth<span className='text-gray-400'>Guard&apos;s</span>
                 </h1>
