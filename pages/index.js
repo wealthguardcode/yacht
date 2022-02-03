@@ -1,15 +1,6 @@
 import Image from 'next/image'
 import Layout from '../components/Layout'
-
-import { Fragment, useState } from 'react'
-import { Dialog, Popover, Tab, Transition } from '@headlessui/react'
-import {
-  MenuIcon,
-  QuestionMarkCircleIcon,
-  SearchIcon,
-  ShoppingBagIcon,
-  XIcon,
-} from '@heroicons/react/outline'
+import { useState } from 'react'
 
 const programData = [
   {
@@ -71,44 +62,36 @@ export default function Home() {
         </div>
         <div className='carousel-inner relative w-full overflow-hidden pb-0'>
           <div className='carousel-item active float-left w-full'>
-            <Image
+            <img
               src='/images/home/slider/yacht-1.jpeg'
-              className='block w-full'
-              height={750}
-              width={1950}
+              className='block w-full carousel-image'
               placeholder='blur'
               blurDataURL
               alt='Yacht on the Water'
             />
           </div>
           <div className='carousel-item float-left w-full'>
-            <Image
+            <img
               src='/images/home/slider/yacht-2.jpeg'
-              className='block w-full'
-              height={750}
-              width={1950}
+              className='block w-full carousel-image'
               placeholder='blur'
               blurDataURL
               alt='Yacht in the Sunset'
             />
           </div>
           <div className='carousel-item float-left w-full'>
-            <Image
+            <img
               src='/images/home/slider/yacht-3.jpeg'
-              className='block w-full'
-              height={750}
-              width={1950}
+              className='block w-full carousel-image'
               placeholder='blur'
               blurDataURL
               alt='Yacht in Action'
             />
           </div>
           <div className='carousel-item float-left w-full'>
-            <Image
+            <img
               src='/images/home/slider/yacht-4.jpeg'
-              className='block w-full'
-              height={750}
-              width={1950}
+              className='block w-full carousel-image'
               placeholder='blur'
               blurDataURL
               alt='Yacht closeup'
@@ -193,6 +176,13 @@ export default function Home() {
                   <h1 className='text-2xl font-extrabold tracking-wide text-gray-800 md:text-4xl'>
                     Yacht Insurance Program
                   </h1>
+                </div>
+                <div className='mt-4 sm:mt-6'>
+                  <p className='max-w-xl mt-5 mx-auto text-lg md:text-xl text-gray-500'>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Proin cursus non velit eu consequat. Maecenas venenatis
+                    congue mi tempor venenatis.
+                  </p>
                 </div>
               </div>
             </div>

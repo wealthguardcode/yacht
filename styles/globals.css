@@ -1,3 +1,44 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.carousel-image {
+  height: 40rem;
+}
+
+/* Media Queries */
+/* iPad Pro */
+/* Landscape */
+@media only screen and (max-width: 1366px) and (orientation: landscape) {
+  .carousel-image {
+    height: 30rem;
+  }
+}
+
+/*Portrait*/
+@media only screen and (max-width: 1024px) and (orientation: portrait) {
+  .carousel-image {
+    height: 30rem;
+  }
+}
+
+/* Landscape */
+@media only screen and (max-width: 1112px) and (orientation: landscape) {
+  .carousel-image {
+    height: 30rem;
+  }
+}
+
+/*Portrait*/
+@media only screen and (max-width: 834px) and (orientation: portrait) {
+  .carousel-image {
+    height: 24rem;
+  }
+}
+
+/* Mobile */
+@media only screen and (max-width: 600px) {
+  .carousel-image {
+    height: 18rem;
+  }
+}
