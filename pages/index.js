@@ -23,6 +23,23 @@ const programData = [
   },
 ]
 
+const features = [
+  {
+    name: 'Minimize risk',
+    description:
+      'Praesent eget ipsum consectetur, interdum justo sed, auctor tortor. Phasellus volutpat finibus felis ac auctor. Integer pharetra consectetur libero, eget suscipit purus elementum ut. Nunc in libero at nulla tempus porta a at nunc.',
+    imageSrc: '/images/home/yacht-8.jpeg',
+    imageAlt: 'Yacht in action on the water.',
+  },
+  {
+    name: 'Refined details',
+    description:
+      'Praesent eget ipsum consectetur, interdum justo sed, auctor tortor. Phasellus volutpat finibus felis ac auctor. Integer pharetra consectetur libero, eget suscipit purus elementum ut. Nunc in libero at nulla tempus porta a at nunc.',
+    imageSrc: '/images/home/yacht-9.jpeg',
+    imageAlt: 'Closeup of docekd yacht in the sunset.',
+  },
+]
+
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
@@ -31,7 +48,7 @@ export default function Home() {
   const [open, setOpen] = useState(false)
   return (
     <Layout>
-      {/* Carousel */}
+      {/* Carousel Hero Section */}
       <div
         id='carouselExampleCrossfade'
         className='carousel slide carousel-fade relative'
@@ -111,7 +128,8 @@ export default function Home() {
           <span className='visually-hidden'>Next</span>
         </button>
       </div>
-      {/* Main Content */}
+
+      {/* Main Content Section */}
       <div className='bg-white'>
         <div>
           {/* Hero section */}
@@ -121,13 +139,7 @@ export default function Home() {
               aria-hidden='true'
               className='hidden absolute inset-0 sm:flex sm:flex-col'>
               <div className='flex-1 relative w-full '>
-                <div className='absolute inset-0 overflow-hidden'>
-                  {/* <img
-                    src='https://tailwindui.com/img/ecommerce-images/home-page-04-hero-full-width.jpg'
-                    alt=''
-                    className='w-full h-full object-center object-cover'
-                  /> */}
-                </div>
+                <div className='absolute inset-0 overflow-hidden'></div>
                 <div className='absolute inset-0 bg-gradient-to-b from-white via-gray-300 to-white opacity-50' />
               </div>
               <div className='w-full bg-white h-32 md:h-40 lg:h-48' />
@@ -139,13 +151,7 @@ export default function Home() {
                 aria-hidden='true'
                 className='absolute inset-0 flex flex-col sm:hidden'>
                 <div className='flex-1 relative w-full '>
-                  <div className='absolute inset-0 overflow-hidden'>
-                    {/* <img
-                      src='https://tailwindui.com/img/ecommerce-images/home-page-04-hero-full-width.jpg'
-                      alt=''
-                      className='w-full h-full object-center object-cover'
-                    /> */}
-                  </div>
+                  <div className='absolute inset-0 overflow-hidden'></div>
                   <div className='absolute inset-0 bg-gradient-to-b from-white via-gray-300 to-white  opacity-50' />
                 </div>
                 <div className='w-full bg-white h-48' />
@@ -221,6 +227,94 @@ export default function Home() {
                 ))}
               </div>
             </section>
+          </div>
+        </div>
+      </div>
+
+      {/* Features Section */}
+      <div className='bg-white'>
+        <div className='max-w-2xl mx-auto py-24 px-4 sm:px-6 sm:py-32 lg:max-w-7xl lg:px-8'>
+          <div className='max-w-3xl mx-auto text-center'>
+            <h2 className='text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl'>
+              Protect Your Vessel
+            </h2>
+            <p className='mt-4 text-gray-500'>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+              in cursus purus. Aliquam ac mauris sed velit blandit semper.
+              Aliquam ac mauris sed velit blandit semper.
+            </p>
+          </div>
+
+          <div className='mt-16 space-y-16'>
+            {features.map((feature, featureIdx) => (
+              <div
+                key={feature.name}
+                className='flex flex-col-reverse lg:grid lg:grid-cols-12 lg:gap-x-8 lg:items-center'>
+                <div
+                  className={classNames(
+                    featureIdx % 2 === 0
+                      ? 'lg:col-start-1'
+                      : 'lg:col-start-8 xl:col-start-9',
+                    'mt-6 lg:mt-0 lg:row-start-1 lg:col-span-5 xl:col-span-4'
+                  )}>
+                  <h3 className='text-lg font-medium text-gray-900'>
+                    {feature.name}
+                  </h3>
+                  <p className='mt-2 text-sm text-gray-500'>
+                    {feature.description}
+                  </p>
+                </div>
+                <div
+                  className={classNames(
+                    featureIdx % 2 === 0
+                      ? 'lg:col-start-6 xl:col-start-5'
+                      : 'lg:col-start-1',
+                    'flex-auto lg:row-start-1 lg:col-span-7 xl:col-span-8 shadow-2xl shadow-gray-700 rounded-lg'
+                  )}>
+                  <div className='aspect-w-5 aspect-h-2 rounded-lg bg-gray-100 overflow-hidden'>
+                    <img
+                      src={feature.imageSrc}
+                      alt={feature.imageAlt}
+                      className='object-center object-cover'
+                    />
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* CTA Section */}
+      <div className='bg-white'>
+        <div className='relative bg-gray-900'>
+          {/* Decorative image and overlay */}
+          <div aria-hidden='true' className='absolute inset-0 overflow-hidden'>
+            <img
+              src='/images/home/yacht-10.jpeg'
+              alt=''
+              className='w-full h-full object-center object-cover'
+            />
+          </div>
+          <div
+            aria-hidden='true'
+            className='absolute inset-0 bg-gray-900 opacity-50'
+          />
+
+          <div className='relative max-w-3xl mx-auto py-32 px-6 flex flex-col items-center text-center sm:py-64 lg:px-0'>
+            <h1 className='text-4xl font-extrabold tracking-tight text-white lg:text-6xl'>
+              Lorem ipsum dolor
+            </h1>
+            <p className='mt-4 text-xl text-white'>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+              in cursus purus. Aliquam ac mauris sed velit blandit semper.
+              Aliquam ac mauris sed velit blandit semper.
+            </p>
+            <a
+              href='#'
+              className='mt-8 inline-block bg-white border border-transparent rounded-md py-3 px-8 text-base font-medium text-gray-900 hover:bg-gray-100'>
+              Learn more
+            </a>
           </div>
         </div>
       </div>
