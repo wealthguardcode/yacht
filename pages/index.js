@@ -292,7 +292,7 @@ export default function Home() {
           <div aria-hidden='true' className='absolute inset-0 overflow-hidden'>
             <img
               src='/images/home/yacht-10.jpeg'
-              alt=''
+              alt='Yachts at the bay in front of cityscape.'
               className='w-full h-full object-center object-cover'
             />
           </div>
