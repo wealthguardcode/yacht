@@ -132,7 +132,7 @@ export default function Home() {
 
       {/* Main content */}
       <div className='bg-white'>
-        <div className='max-w-7xl mx-auto md:py-16 px-4 sm:py-24 sm:px-6 lg:px-8'>
+        <div className='max-w-7xl mx-auto md:py-16 px-4  lg:px-8'>
           <div className='text-left'>
             {/* <h2 className='text-base font-semibold text-indigo-600 tracking-wide uppercase'>
               Pricing
