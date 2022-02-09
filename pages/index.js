@@ -48,7 +48,7 @@ export default function Home() {
           <div className='carousel-item active' data-mdb-interval='36000'>
             <video className='img-fluid' autoPlay loop muted>
               <source
-                src='/images/home/slider/videos/yacht-video-1.mp4'
+                src='https://res.cloudinary.com/wealthguard-insurance-group/video/upload/v1644445555/yacht-video-1_x2dp0w.mp4'
                 type='video/mp4'
               />
             </video>
