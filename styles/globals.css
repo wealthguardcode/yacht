@@ -2,8 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
-.carousel-image {
-  height: 40rem;
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.carousel-wrapper {
+  height: 48rem;
+}
+.carousel-item video {
+  height: auto;
+  width: auto;
+}
+
+.carousel-item video {
+  background-size: cover;
+  background-position: 50% 50%;
 }
 
 /* Media Queries */
@@ -11,35 +24,35 @@
 /* iPad Pro */
 /* Landscape */
 @media only screen and (max-width: 1366px) and (orientation: landscape) {
-  .carousel-image {
+  .carousel-wrapper {
     height: 30rem;
   }
 }
 
 /*Portrait*/
 @media only screen and (max-width: 1024px) and (orientation: portrait) {
-  .carousel-image {
+  .carousel-wrapper {
     height: 30rem;
   }
 }
 
 /* Landscape */
 @media only screen and (max-width: 1112px) and (orientation: landscape) {
-  .carousel-image {
+  .carousel-wrapper {
     height: 30rem;
   }
 }
 
 /*Portrait*/
 @media only screen and (max-width: 834px) and (orientation: portrait) {
-  .carousel-image {
+  .carousel-wrapper {
     height: 24rem;
   }
 }
 
 /* Mobile */
 @media only screen and (max-width: 600px) {
-  .carousel-image {
-    height: 18rem;
+  .carousel-wrapper {
+    height: 22rem;
   }
 }

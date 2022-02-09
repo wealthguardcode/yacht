@@ -11,15 +11,34 @@ export default function Layout({ children, title, description, keywords }) {
         <meta name='keywords' content={keywords} />
         <meta name='description' content={description} />
         <link rel='icon' href='/favicon.ico' />
-        <link rel='stylesheet' href='https://rsms.me/inter/inter.css' />
+        <link rel='preconnect' href='https://fonts.googleapis.com' />
+        <link rel='preconnect' href='https://fonts.gstatic.com' crossOrigin />
         <link
+          href='https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap'
           rel='stylesheet'
-          href='https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css'
+        />
+
+        <link
+          href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'
+          rel='stylesheet'
+        />
+
+        <link
+          href='https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.css'
+          rel='stylesheet'
         />
       </Head>
       <Header />
       <main>{children}</main>
-      <Script src='https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js'></Script>
+      <Script
+        src='https://code.jquery.com/jquery-3.6.0.min.js'
+        integrity='sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4='
+        crossorigin='anonymous'
+      />
+      <Script
+        type='text/javascript'
+        src='https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.js'></Script>
+
       <Footer />
     </div>
   )

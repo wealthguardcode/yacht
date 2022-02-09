@@ -1,6 +1,7 @@
 import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
+import { SiLinkedin, SiFacebook } from 'react-icons/si'
 import Link from 'next/link'
 
 function classNames(...classes) {
@@ -9,17 +10,21 @@ function classNames(...classes) {
 
 export default function Header() {
   return (
-    <Popover as='nav' className='bg-white shadow'>
-      {({ open }) => (
-        <>
-          <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
-            <div className='flex justify-between h-16'>
-              <div className='flex'>
+    <>
+      <div className='hidden sm:flex w-full px-20 md:px-28 lg:px-36 xl:px-48 py-3 bg-gradient-to-r from-red-500 to-red-900 justify-end'>
+        <SiLinkedin className='w-5 h-5 mx-4 text-gray-800 hover:text-gray-500 hover:cursor-pointer' />
+        <SiFacebook className='w-5 h-5 text-gray-800 hover:text-gray-500 hover:cursor-pointer' />
+      </div>
+      <Popover as='nav' className='bg-gray-300 shadow'>
+        {({ open }) => (
+          <>
+            <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 lg:py-3'>
+              <div className='flex justify-between h-16'>
                 <div className='flex-shrink-0 flex items-center'>
                   <Link href='/'>
                     <a>
                       <img
-                        className='block lg:hidden h-8 w-auto'
+                        className='block lg:hidden h-10 w-auto'
                         src='/images/wig-logo-full.svg'
                         alt='Workflow'
                       />
@@ -28,90 +33,89 @@ export default function Header() {
                   <Link href='/'>
                     <a>
                       <img
-                        className='hidden lg:block h-8 w-auto'
+                        className='hidden lg:block h-12 w-auto'
                         src='/images/wig-logo-full.svg'
                         alt='Workflow'
                       />
                     </a>
                   </Link>
                 </div>
-                <div className='hidden sm:ml-6 sm:flex sm:space-x-8'>
+
+                <div className='hidden sm:ml-6 sm:flex sm:space-x-8 sm:justify-end'>
                   {/* Current: "border-red-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" */}
-                  <Link href='/'>
-                    <a className='border-red-500 text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium'>
-                      Home
+                  <Link href='/solutions'>
+                    <a className='border-transparent hover:border-red-500 text-gray-600 hover:text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-md font-medium '>
+                      Solutions
                     </a>
                   </Link>
-                  <a
-                    href='#'
-                    className='border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium'>
-                    Link 1
-                  </a>
-                  <a
-                    href='#'
-                    className='border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium'>
-                    Link 2
-                  </a>
-                  <a
-                    href='#'
-                    className='border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium'>
-                    Link 3
-                  </a>
+                  <Link href='/resources'>
+                    <a className='border-transparent text-gray-600 hover:border-red-500 hover:text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-md font-medium '>
+                      Resources
+                    </a>
+                  </Link>
+                  <Link href='/for-agents'>
+                    <a className='border-transparent text-gray-600 hover:border-red-500 hover:text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-md font-medium'>
+                      For Agents
+                    </a>
+                  </Link>
+                  <Link href='/contact'>
+                    <a className='border-transparent text-gray-600 hover:border-red-500 hover:text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-md font-medium'>
+                      Contact
+                    </a>
+                  </Link>
+                </div>
+
+                <div className='-mr-2 flex items-center sm:hidden'>
+                  {/* Mobile menu button */}
+                  <Popover.Button className='inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500  outline-none'>
+                    <span className='sr-only'>Open main menu</span>
+                    {open ? (
+                      <XIcon className='block h-6 w-6' aria-hidden='true' />
+                    ) : (
+                      <MenuIcon className='block h-6 w-6' aria-hidden='true' />
+                    )}
+                  </Popover.Button>
                 </div>
               </div>
-              <div className='-mr-2 flex items-center sm:hidden'>
-                {/* Mobile menu button */}
-                <Popover.Button className='inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-red-500'>
-                  <span className='sr-only'>Open main menu</span>
-                  {open ? (
-                    <XIcon className='block h-6 w-6' aria-hidden='true' />
-                  ) : (
-                    <MenuIcon className='block h-6 w-6' aria-hidden='true' />
-                  )}
-                </Popover.Button>
-              </div>
             </div>
-          </div>
 
-          <Transition
-            as={Fragment}
-            enter='transition ease-out duration-200'
-            enterFrom='transform opacity-0 scale-95'
-            enterTo='transform opacity-100 scale-100'
-            leave='transition ease-in duration-75'
-            leaveFrom='transform opacity-100 scale-100'
-            leaveTo='transform opacity-0 scale-95'>
-            <Popover.Panel className='sm:hidden absolute z-10 bg-white w-full rounded-b-lg'>
-              <div className='pt-2 pb-3 space-y-1'>
-                {/* Current: "bg-red-50 border-red-500 text-red-700", Default: "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700" */}
-                <Link href='/'>
-                  <a className='bg-red-50 border-red-500 text-red-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium'>
-                    Home
-                  </a>
-                </Link>
-                <Popover.Button
-                  as='a'
-                  href='#'
-                  className='border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium'>
-                  Link 1
-                </Popover.Button>
-                <Popover.Button
-                  as='a'
-                  href='#'
-                  className='border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium'>
-                  Link 2
-                </Popover.Button>
-                <Popover.Button
-                  as='a'
-                  href='#'
-                  className='border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium'>
-                  Link 3
-                </Popover.Button>
-              </div>
-            </Popover.Panel>
-          </Transition>
-        </>
-      )}
-    </Popover>
+            <Transition
+              as={Fragment}
+              enter='transition ease-out duration-100'
+              enterFrom='transform opacity-0 scale-95'
+              enterTo='transform opacity-100 scale-100'
+              leave='transition ease-in-out duration-300 transform'
+              leaveFrom='translate-y-0'
+              leaveTo='-translate-y-full'>
+              <Popover.Panel className='sm:hidden absolute z-10 bg-gray-300 w-full h-full rounded-b-lg'>
+                <div className='pt-2 pb-3 space-y-1'>
+                  {/* Current: "bg-red-50 border-red-500 text-red-700", Default: "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700" */}
+                  <Link href='/solutions'>
+                    <a className='border-transparent text-gray-600 hover:bg-gray-400 hover:border-gray-700 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium'>
+                      Solutions
+                    </a>
+                  </Link>
+                  <Link href='/resources'>
+                    <a className='border-transparent text-gray-600 hover:bg-gray-400 hover:border-gray-700 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium'>
+                      Resources
+                    </a>
+                  </Link>
+                  <Link href='/for-agents'>
+                    <a className='border-transparent text-gray-600 hover:bg-gray-400 hover:border-gray-700 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium'>
+                      For Agents
+                    </a>
+                  </Link>
+                  <Link href='/contact'>
+                    <a className='border-transparent text-gray-600 hover:bg-gray-400 hover:border-gray-700 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium'>
+                      Contact
+                    </a>
+                  </Link>
+                </div>
+              </Popover.Panel>
+            </Transition>
+          </>
+        )}
+      </Popover>
+    </>
   )
 }
