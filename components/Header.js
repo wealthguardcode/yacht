@@ -17,8 +17,6 @@ export default function Header() {
     setPathName(router.pathname)
   }
 
-  console.log(pathName)
-
   return (
     <>
       <div className='hidden sm:flex w-full px-20 md:px-28 lg:px-36 xl:px-48 py-3 bg-gradient-to-r from-red-500 to-red-900 justify-end'>
