@@ -43,12 +43,33 @@ export default function Header() {
 
                 <div className='hidden sm:ml-6 sm:flex sm:space-x-8 sm:justify-end'>
                   {/* Current: "border-red-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" */}
-                  <Link href='/solutions'>
-                    <a className='border-transparent hover:border-red-500 text-gray-600 hover:text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-md font-medium '>
+                  {/* active-link */}
+                  {/* <Link href='/solutions'>
+                    <a className='border-transparent hover:border-red-500 text-gray-600 hover:text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-md font-medium'>
                       Solutions
+                    </a>
+                  </Link> */}
+                  <Link href='/solutions'>
+                    <a className=' text-gray-600 hover:text-gray-900 inline-flex items-center px-1 pt-1 text-md font-medium '>
+                      <h1>Solutions</h1>
                     </a>
                   </Link>
                   <Link href='/resources'>
+                    <a className=' text-gray-600 hover:text-gray-900 inline-flex items-center px-1 pt-1 text-md font-medium '>
+                      <h1>Resources</h1>
+                    </a>
+                  </Link>
+                  <Link href='/for-agents'>
+                    <a className=' text-gray-600 hover:text-gray-900 inline-flex items-center px-1 pt-1 text-md font-medium '>
+                      <h1>For Agents</h1>
+                    </a>
+                  </Link>
+                  <Link href='/contact'>
+                    <a className=' text-gray-600 hover:text-gray-900 inline-flex items-center px-1 pt-1 text-md font-medium '>
+                      <h1>Contact</h1>
+                    </a>
+                  </Link>
+                  {/* <Link href='/resources'>
                     <a className='border-transparent text-gray-600 hover:border-red-500 hover:text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-md font-medium '>
                       Resources
                     </a>
@@ -62,7 +83,7 @@ export default function Header() {
                     <a className='border-transparent text-gray-600 hover:border-red-500 hover:text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-md font-medium'>
                       Contact
                     </a>
-                  </Link>
+                  </Link> */}
                 </div>
 
                 <div className='-mr-2 flex items-center sm:hidden'>
@@ -91,11 +112,31 @@ export default function Header() {
                 <div className='pt-2 pb-3 space-y-1'>
                   {/* Current: "bg-red-50 border-red-500 text-red-700", Default: "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700" */}
                   <Link href='/solutions'>
-                    <a className='border-transparent text-gray-600 hover:bg-gray-400 hover:border-gray-700 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium'>
-                      Solutions
+                    <a className=' text-gray-600 hover:text-gray-700 block pl-3 pr-4 py-2 text-base font-medium fromLeft'>
+                      <h1>Solutions</h1>
                     </a>
                   </Link>
                   <Link href='/resources'>
+                    <a className=' text-gray-600 hover:text-gray-700 block pl-3 pr-4 py-2 text-base font-medium fromLeft'>
+                      <h1>Resources</h1>
+                    </a>
+                  </Link>
+                  <Link href='/for-agents'>
+                    <a className=' text-gray-600 hover:text-gray-700 block pl-3 pr-4 py-2 text-base font-medium fromLeft'>
+                      <h1>For Agents</h1>
+                    </a>
+                  </Link>
+                  <Link href='/contact'>
+                    <a className=' text-gray-600 hover:text-gray-700 block pl-3 pr-4 py-2 text-base font-medium fromLeft'>
+                      <h1>Contact</h1>
+                    </a>
+                  </Link>
+                  {/* <Link href='/solutions'>
+                    <a className='border-transparent text-gray-600 hover:bg-gray-400 hover:border-gray-700 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium'>
+                      Solutions
+                    </a>
+                  </Link> */}
+                  {/* <Link href='/resources'>
                     <a className='border-transparent text-gray-600 hover:bg-gray-400 hover:border-gray-700 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium'>
                       Resources
                     </a>
@@ -109,7 +150,7 @@ export default function Header() {
                     <a className='border-transparent text-gray-600 hover:bg-gray-400 hover:border-gray-700 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium'>
                       Contact
                     </a>
-                  </Link>
+                  </Link> */}
                 </div>
               </Popover.Panel>
             </Transition>

@@ -19,6 +19,34 @@
   background-position: 50% 50%;
 }
 
+/* Navigation */
+h1 {
+  color: #666;
+  display: inline-block;
+  margin: 0;
+}
+h1:after {
+  display: block;
+  content: '';
+  border-bottom: solid 3px #ef4444;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}
+
+/* .active-link h1 {
+  display: block;
+  content: '';
+  border-bottom: solid 3px #ef4444;
+  margin-top: 0.5rem;
+} */
+h1:hover:after {
+  transform: scaleX(1);
+}
+
+h1.fromLeft:after {
+  transform-origin: 100% 50%;
+}
+
 /* Media Queries */
 
 /* iPad Pro */
