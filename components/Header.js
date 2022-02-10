@@ -17,6 +17,8 @@ export default function Header() {
     setPathName(router.pathname)
   }
 
+  console.log(pathName)
+
   return (
     <>
       <div className='hidden sm:flex w-full px-20 md:px-28 lg:px-36 xl:px-48 py-3 bg-gradient-to-r from-red-500 to-red-900 justify-end'>
@@ -75,7 +77,9 @@ export default function Header() {
                         router.asPath === '/resources'
                           ? 'active-link hover:text-gray-900 inline-flex items-center px-1 pt-1 text-md font-medium'
                           : 'text-gray-600 hover:text-gray-900 inline-flex items-center px-1 pt-1 text-md font-medium hover-style'
-                      }>
+                      }
+                      onClick={newPathName}
+                      pathname={pathName}>
                       <h1>Resources</h1>
                     </a>
                   </Link>
@@ -85,7 +89,9 @@ export default function Header() {
                         router.asPath === '/for-agents'
                           ? 'active-link hover:text-gray-900 inline-flex items-center px-1 pt-1 text-md font-medium'
                           : 'text-gray-600 hover:text-gray-900 inline-flex items-center px-1 pt-1 text-md font-medium hover-style'
-                      }>
+                      }
+                      onClick={newPathName}
+                      pathname={pathName}>
                       <h1>For Agents</h1>
                     </a>
                   </Link>
@@ -95,7 +101,9 @@ export default function Header() {
                         router.asPath === '/contact'
                           ? 'active-link hover:text-gray-900 inline-flex items-center px-1 pt-1 text-md font-medium'
                           : 'text-gray-600 hover:text-gray-900 inline-flex items-center px-1 pt-1 text-md font-medium hover-style'
-                      }>
+                      }
+                      onClick={newPathName}
+                      pathname={pathName}>
                       <h1>Contact</h1>
                     </a>
                   </Link>
@@ -147,7 +155,9 @@ export default function Header() {
                         router.asPath === '/solutions'
                           ? 'active-link hover:text-gray-900 inline-block pl-3 pr-4 py-2 text-base font-medium'
                           : 'text-gray-600 hover:text-gray-900 block pl-3 pr-4 py-2 text-base font-medium hover-style'
-                      }>
+                      }
+                      onClick={newPathName}
+                      pathname={pathName}>
                       <h1>Solutions</h1>
                     </a>
                   </Link>
@@ -157,7 +167,9 @@ export default function Header() {
                         router.asPath === '/resources'
                           ? 'active-link hover:text-gray-900 inline-block pl-3 pr-4 py-2 text-base font-medium'
                           : 'text-gray-600 hover:text-gray-900 block pl-3 pr-4 py-2 text-base font-medium hover-style'
-                      }>
+                      }
+                      onClick={newPathName}
+                      pathname={pathName}>
                       <h1>Resources</h1>
                     </a>
                   </Link>
@@ -167,7 +179,9 @@ export default function Header() {
                         router.asPath === '/for-agents'
                           ? 'active-link hover:text-gray-900 inline-block pl-3 pr-4 py-2 text-base font-medium'
                           : 'text-gray-600 hover:text-gray-900 block pl-3 pr-4 py-2 text-base font-medium hover-style'
-                      }>
+                      }
+                      onClick={newPathName}
+                      pathname={pathName}>
                       <h1>For Agents</h1>
                     </a>
                   </Link>
@@ -177,7 +191,9 @@ export default function Header() {
                         router.asPath === '/contact'
                           ? 'active-link hover:text-gray-900 inline-block pl-3 pr-4 py-2 text-base font-medium'
                           : 'text-gray-600 hover:text-gray-900 block pl-3 pr-4 py-2 text-base font-medium hover-style'
-                      }>
+                      }
+                      onClick={newPathName}
+                      pathname={pathName}>
                       <h1>Contact</h1>
                     </a>
                   </Link>
