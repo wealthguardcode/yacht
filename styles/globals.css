@@ -51,6 +51,15 @@ h1.fromLeft:after {
   transform-origin: 100% 50%;
 }
 
+/* Home Page */
+.border-style:after {
+  display: block;
+  content: '';
+  width: 5rem;
+  margin-top: 1rem;
+  border-bottom: solid 3px #ef4444;
+}
+
 /* Media Queries */
 
 /* Large */

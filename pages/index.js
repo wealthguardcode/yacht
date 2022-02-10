@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Layout from '../components/Layout'
 import { useState } from 'react'
+import { ChevronDownIcon } from '@heroicons/react/outline'
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
@@ -149,6 +150,48 @@ export default function Home() {
             <p className='max-w-xl mt-5 text-xl text-gray-500'>
               WealthGuard provides innovative solutions for Yacht insurance.
             </p>
+          </div>
+        </div>
+      </div>
+
+      {/* Call Out Section */}
+      <div className='bg-white'>
+        <div className='max-w-7xl mx-auto px-4 py-8 md:py-16 lg:px-8'>
+          <div className='grid grid-cols-1 lg:grid-cols-2'>
+            <div className='flex felx-col my-16 py-10'>
+              <p className='max-w-2xl lg:self-center font-bold text-2xl border-style'>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Praesent ac elit tortor.
+              </p>
+            </div>
+            <div className='flex justify-center py-8 md:py-0'>
+              <div className='rounded-lg border-4 border-red-500 w-72 h-80 mx-1 md:mx-3 flex flex-col justify-center items-center'>
+                <div className='bg-gray-400 rounded-full p-8 md:p-10 relative -mt-32 rounded-tr-3xl'>
+                  <img
+                    src='/images/home/bar-chart.png'
+                    alt='Bar chart'
+                    className='h-16 md:h-20'
+                  />
+                </div>
+                <p className='text-lg md:text-xl text-center px-1 md:px-2 pt-4'>
+                  A Smarter Strategy
+                </p>
+                <ChevronDownIcon className='h-20 transform transition duration-500 hover:scale-125 hover:text-red-500 hover:cursor-pointer' />
+              </div>
+              <div className='rounded-lg border-4 border-red-500 w-72 h-80 mx-1 md:mx-3 flex flex-col justify-center items-center'>
+                <div className='bg-red-400 rounded-full p-8 md:p-10 relative -mt-32 rounded-tr-3xl'>
+                  <img
+                    src='/images/home/hand.png'
+                    alt='Hand saving money'
+                    className='h-16 md:h-20'
+                  />
+                </div>
+                <p className='text-lg md:text-xl text-center px-1 md:px-2 pt-4'>
+                  Powerful Cost Management
+                </p>
+                <ChevronDownIcon className='h-20 transform transition duration-500 hover:scale-125 hover:text-red-500 hover:cursor-pointer' />
+              </div>
+            </div>
           </div>
         </div>
       </div>
