@@ -7,16 +7,21 @@
 }
 
 .carousel-wrapper {
-  height: 48rem;
+  height: 50rem;
 }
-.carousel-item video {
+/* .carousel-item video {
   height: auto;
   width: auto;
-}
+} */
 
 .carousel-item video {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
   background-size: cover;
-  background-position: 50% 50%;
+  -o-background-size: cover;
 }
 
 /* Navigation */
@@ -49,11 +54,19 @@ h1.fromLeft:after {
 
 /* Media Queries */
 
+/* Large */
+@media only screen and (max-width: 2100px) {
+  .carousel-wrapper {
+    height: 50rem;
+    width: 100%;
+  }
+}
+
 /* iPad Pro */
 /* Landscape */
 @media only screen and (max-width: 1366px) and (orientation: landscape) {
   .carousel-wrapper {
-    height: 30rem;
+    height: 40rem;
   }
 }
 
