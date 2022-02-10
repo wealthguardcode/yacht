@@ -1,14 +1,22 @@
-import { Fragment } from 'react'
+import { Fragment, useState } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
 import { SiLinkedin, SiFacebook } from 'react-icons/si'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
 export default function Header() {
+  const router = useRouter()
+  const [pathName, setPathName] = useState(router.pathname)
+
+  const newPathName = () => {
+    setPathName(router.pathname)
+  }
+
   return (
     <>
       <div className='hidden sm:flex w-full px-20 md:px-28 lg:px-36 xl:px-48 py-3 bg-gradient-to-r from-red-500 to-red-900 justify-end'>
@@ -50,22 +58,44 @@ export default function Header() {
                     </a>
                   </Link> */}
                   <Link href='/solutions'>
-                    <a className=' text-gray-600 hover:text-gray-900 inline-flex items-center px-1 pt-1 text-md font-medium '>
+                    <a
+                      className={
+                        router.asPath === '/solutions'
+                          ? 'active-link hover:text-gray-900 inline-flex items-center px-1 pt-1 text-md font-medium'
+                          : 'text-gray-600 hover:text-gray-900 inline-flex items-center px-1 pt-1 text-md font-medium hover-style'
+                      }
+                      onClick={newPathName}
+                      pathname={pathName}>
                       <h1>Solutions</h1>
                     </a>
                   </Link>
                   <Link href='/resources'>
-                    <a className=' text-gray-600 hover:text-gray-900 inline-flex items-center px-1 pt-1 text-md font-medium '>
+                    <a
+                      className={
+                        router.asPath === '/resources'
+                          ? 'active-link hover:text-gray-900 inline-flex items-center px-1 pt-1 text-md font-medium'
+                          : 'text-gray-600 hover:text-gray-900 inline-flex items-center px-1 pt-1 text-md font-medium hover-style'
+                      }>
                       <h1>Resources</h1>
                     </a>
                   </Link>
                   <Link href='/for-agents'>
-                    <a className=' text-gray-600 hover:text-gray-900 inline-flex items-center px-1 pt-1 text-md font-medium '>
+                    <a
+                      className={
+                        router.asPath === '/for-agents'
+                          ? 'active-link hover:text-gray-900 inline-flex items-center px-1 pt-1 text-md font-medium'
+                          : 'text-gray-600 hover:text-gray-900 inline-flex items-center px-1 pt-1 text-md font-medium hover-style'
+                      }>
                       <h1>For Agents</h1>
                     </a>
                   </Link>
                   <Link href='/contact'>
-                    <a className=' text-gray-600 hover:text-gray-900 inline-flex items-center px-1 pt-1 text-md font-medium '>
+                    <a
+                      className={
+                        router.asPath === '/contact'
+                          ? 'active-link hover:text-gray-900 inline-flex items-center px-1 pt-1 text-md font-medium'
+                          : 'text-gray-600 hover:text-gray-900 inline-flex items-center px-1 pt-1 text-md font-medium hover-style'
+                      }>
                       <h1>Contact</h1>
                     </a>
                   </Link>
@@ -112,22 +142,42 @@ export default function Header() {
                 <div className='pt-2 pb-3 space-y-1'>
                   {/* Current: "bg-red-50 border-red-500 text-red-700", Default: "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700" */}
                   <Link href='/solutions'>
-                    <a className=' text-gray-600 hover:text-gray-700 block pl-3 pr-4 py-2 text-base font-medium fromLeft'>
+                    <a
+                      className={
+                        router.asPath === '/solutions'
+                          ? 'active-link hover:text-gray-900 inline-block pl-3 pr-4 py-2 text-base font-medium'
+                          : 'text-gray-600 hover:text-gray-900 block pl-3 pr-4 py-2 text-base font-medium hover-style'
+                      }>
                       <h1>Solutions</h1>
                     </a>
                   </Link>
                   <Link href='/resources'>
-                    <a className=' text-gray-600 hover:text-gray-700 block pl-3 pr-4 py-2 text-base font-medium fromLeft'>
+                    <a
+                      className={
+                        router.asPath === '/resources'
+                          ? 'active-link hover:text-gray-900 inline-block pl-3 pr-4 py-2 text-base font-medium'
+                          : 'text-gray-600 hover:text-gray-900 block pl-3 pr-4 py-2 text-base font-medium hover-style'
+                      }>
                       <h1>Resources</h1>
                     </a>
                   </Link>
                   <Link href='/for-agents'>
-                    <a className=' text-gray-600 hover:text-gray-700 block pl-3 pr-4 py-2 text-base font-medium fromLeft'>
+                    <a
+                      className={
+                        router.asPath === '/for-agents'
+                          ? 'active-link hover:text-gray-900 inline-block pl-3 pr-4 py-2 text-base font-medium'
+                          : 'text-gray-600 hover:text-gray-900 block pl-3 pr-4 py-2 text-base font-medium hover-style'
+                      }>
                       <h1>For Agents</h1>
                     </a>
                   </Link>
                   <Link href='/contact'>
-                    <a className=' text-gray-600 hover:text-gray-700 block pl-3 pr-4 py-2 text-base font-medium fromLeft'>
+                    <a
+                      className={
+                        router.asPath === '/contact'
+                          ? 'active-link hover:text-gray-900 inline-block pl-3 pr-4 py-2 text-base font-medium'
+                          : 'text-gray-600 hover:text-gray-900 block pl-3 pr-4 py-2 text-base font-medium hover-style'
+                      }>
                       <h1>Contact</h1>
                     </a>
                   </Link>
