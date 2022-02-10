@@ -156,10 +156,10 @@ export default function Home() {
 
       {/* Call Out Section */}
       <div className='bg-white'>
-        <div className='max-w-7xl mx-auto px-4 py-8 md:py-16 lg:px-8'>
+        <div className='max-w-7xl mx-auto px-1 md:px-4 py-8 md:py-16 lg:px-8'>
           <div className='grid grid-cols-1 lg:grid-cols-2'>
             <div className='flex felx-col my-16 py-10'>
-              <p className='max-w-2xl lg:self-center font-bold text-2xl border-style'>
+              <p className='max-w-2xl px-2 lg:self-center font-bold text-2xl border-style'>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Praesent ac elit tortor.
               </p>
