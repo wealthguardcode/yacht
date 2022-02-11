@@ -165,8 +165,8 @@ export default function Home() {
               </p>
             </div>
             <div className='flex justify-center py-8 md:py-0'>
-              <div className='rounded-lg border-4 border-red-500 w-72 h-80 mx-1 md:mx-3 flex flex-col justify-center items-center'>
-                <div className='bg-gray-400 rounded-full p-8 md:p-10 relative -mt-32 rounded-tr-3xl'>
+              <div className='rounded-lg border-4 border-red-500 w-72 h-80 mx-1 md:mx-3 flex flex-col justify-center items-center shadow-2xl shadow-gray-600'>
+                <div className='bg-gray-400 rounded-full p-8 md:p-10 relative border-8 border-white -mt-32 rounded-tr-3xl'>
                   <img
                     src='/images/home/bar-chart.png'
                     alt='Bar chart'
@@ -178,8 +178,8 @@ export default function Home() {
                 </p>
                 <ChevronDownIcon className='h-20 transform transition duration-500 hover:scale-125 hover:text-red-500 hover:cursor-pointer' />
               </div>
-              <div className='rounded-lg border-4 border-red-500 w-72 h-80 mx-1 md:mx-3 flex flex-col justify-center items-center'>
-                <div className='bg-red-400 rounded-full p-8 md:p-10 relative -mt-32 rounded-tr-3xl'>
+              <div className='rounded-lg border-4 border-red-500 w-72 h-80 mx-1 md:mx-3 flex flex-col justify-center items-center shadow-2xl shadow-gray-600'>
+                <div className='bg-red-400 rounded-full p-8 md:p-10 relative border-8 border-white -mt-32 rounded-tr-3xl'>
                   <img
                     src='/images/home/hand.png'
                     alt='Hand saving money'
