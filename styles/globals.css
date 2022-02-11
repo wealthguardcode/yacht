@@ -97,6 +97,28 @@ h1.fromLeft:after {
   .carousel-wrapper {
     height: 24rem;
   }
+
+  .call-out-box:before {
+    display: inline-block;
+    position: absolute;
+    content: '';
+    height: 40px;
+    width: 220px;
+    left: 55%;
+    transform: translate(-290px, -160px);
+    background-color: white;
+  }
+
+  .call-out-box2:before {
+    display: inline-block;
+    position: absolute;
+    content: '';
+    height: 40px;
+    width: 220px;
+    left: 55%;
+    transform: translate(0%, -160px);
+    background-color: white;
+  }
 }
 
 /* Mobile */

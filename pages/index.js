@@ -158,7 +158,7 @@ export default function Home() {
       <div className='bg-white'>
         <div className='max-w-7xl mx-auto px-1 md:px-4 py-8 md:py-16 lg:px-8'>
           <div className='grid grid-cols-1 lg:grid-cols-2'>
-            <div className='flex felx-col my-16 py-10'>
+            <div className='flex felx-col my-6 md:my-16 md:py-10'>
               <p className='max-w-2xl px-2 lg:self-center font-bold text-2xl border-style'>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Praesent ac elit tortor.
