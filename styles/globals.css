@@ -55,6 +55,13 @@ h1.fromLeft:after {
   margin-top: 1rem;
   border-bottom: solid 3px #ef4444;
 }
+.border-style2:after {
+  display: block;
+  content: '';
+  width: 5rem;
+  margin-top: 1rem;
+  border-bottom: solid 3px #303030;
+}
 
 .slick-prev {
   left: 3% !important;

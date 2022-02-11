@@ -20,8 +20,8 @@ export default function Header() {
   return (
     <>
       <div className='hidden sm:flex w-full px-20 md:px-28 lg:px-36 xl:px-48 py-3 bg-gradient-to-r from-red-500 to-red-900 justify-end'>
-        <SiLinkedin className='w-5 h-5 mx-4 text-gray-800 hover:text-gray-500 hover:cursor-pointer' />
-        <SiFacebook className='w-5 h-5 text-gray-800 hover:text-gray-500 hover:cursor-pointer' />
+        <SiLinkedin className='w-5 h-5 mx-4 text-gray-800 hover:text-gray-500 hover:cursor-pointer transform transition duration-500 hover:scale-110' />
+        <SiFacebook className='w-5 h-5 text-gray-800 hover:text-gray-500 hover:cursor-pointer transform transition duration-500 hover:scale-110' />
       </div>
       <Popover as='nav' className='bg-gray-300 shadow'>
         {({ open }) => (
