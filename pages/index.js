@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Layout from '../components/Layout'
 import { useState } from 'react'
 import { ChevronDownIcon } from '@heroicons/react/outline'
+import ImageSlider from '../components/ImageSlider'
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
@@ -194,6 +195,11 @@ export default function Home() {
             </div>
           </div>
         </div>
+      </div>
+
+      {/* Testimonial Slider */}
+      <div className='w-full bg-gray-300 py-3'>
+        <ImageSlider />
       </div>
     </Layout>
   )

@@ -9,10 +9,6 @@
 .carousel-wrapper {
   height: 50rem;
 }
-/* .carousel-item video {
-  height: auto;
-  width: auto;
-} */
 
 .carousel-item video {
   width: 100%;
@@ -60,6 +56,16 @@ h1.fromLeft:after {
   border-bottom: solid 3px #ef4444;
 }
 
+.slick-prev {
+  left: 3% !important;
+  z-index: 1;
+}
+
+.slick-next {
+  right: 3% !important;
+  z-index: 1;
+}
+
 /* Media Queries */
 
 /* Large */
@@ -96,28 +102,6 @@ h1.fromLeft:after {
 @media only screen and (max-width: 834px) and (orientation: portrait) {
   .carousel-wrapper {
     height: 24rem;
-  }
-
-  .call-out-box:before {
-    display: inline-block;
-    position: absolute;
-    content: '';
-    height: 40px;
-    width: 220px;
-    left: 55%;
-    transform: translate(-290px, -160px);
-    background-color: white;
-  }
-
-  .call-out-box2:before {
-    display: inline-block;
-    position: absolute;
-    content: '';
-    height: 40px;
-    width: 220px;
-    left: 55%;
-    transform: translate(0%, -160px);
-    background-color: white;
   }
 }
 
