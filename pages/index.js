@@ -5,6 +5,7 @@ import { ChevronDownIcon } from '@heroicons/react/outline'
 import ImageSlider from '../components/ImageSlider'
 
 import VideoPlayer from '../components/VideoPlayer'
+import Link from 'next/link'
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
@@ -323,6 +324,101 @@ export default function Home() {
                   Liability Cost Intelligence
                 </p>
                 <p className='mt-3 mx-3 text-gray-900'>Lorem ipsum dolor sit</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Resources Section */}
+      <section className='bg-white'>
+        <div className='max-w-7xl mx-auto px-1 md:px-4 py-8 md:py-24 lg:px-8'>
+          <div className='grid grid-cols-1 lg:grid-cols-2'>
+            <div className='flex flex-col md:pb-5'>
+              <p className='max-w-2xl mx-2 px-2 font-bold text-gray-900 text-3xl border-style'>
+                Recommended Resources
+              </p>
+              <p className='max-w-xl mx-2 px-2 py-4 font-medium text-gray-900'>
+                Stay informed to get the most out of WealthGuard&apos;s
+                Insurance Programs.
+              </p>
+            </div>
+            <div className='flex justify-around items-center'>
+              <div className='flex flex-col items-center py-6 md:py-2'>
+                <Link href='/images/home/theWealthGuardDifference.pdf'>
+                  <a
+                    className='hover:text-red-700'
+                    target='_blank'
+                    rel='noreferrer'>
+                    <img
+                      src='/images/home/theWealthGuardDiffernece-cover.png'
+                      alt="WealthGuard's Agent Retention Flyer"
+                      className='h-40 w-28 shadow-xl hover:shadow-2xl hover:cursor-pointer mx-auto'
+                    />
+                    <p className='text-sm my-2'>The WealthGuard Difference</p>
+                  </a>
+                </Link>
+              </div>
+              <div className='flex flex-col items-center'>
+                <Link href='/images/home/yachtInsuranceProgram.pdf'>
+                  <a
+                    className='hover:text-red-700'
+                    target='_blank'
+                    rel='noreferrer'>
+                    <img
+                      src='/images/home/yachtInsuranceProgram-cover.png'
+                      alt="WealthGuard's Yacht Insurance Program"
+                      className='h-40 w-28 shadow-xl hover:shadow-2xl hover:cursor-pointer mx-auto'
+                    />
+                    <p className='text-sm my-2'>Yacht Insurance Program</p>
+                  </a>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA section */}
+      <div className='relative bg-gray-900'>
+        <div className='h-80 absolute inset-x-0 bottom-0 xl:top-0 xl:h-full'>
+          <div className='h-full w-full xl:grid xl:grid-cols-2'>
+            <div className='h-full xl:relative xl:col-start-2'>
+              <img
+                className='h-full w-full object-cover opacity-50 xl:absolute xl:inset-0'
+                src='/images/home/yacht-9.jpeg'
+                alt='Yacht docked in the sunset'
+              />
+              <div
+                aria-hidden='true'
+                className='absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-gray-900 xl:inset-y-0 xl:left-0 xl:h-full xl:w-32 xl:bg-gradient-to-r'
+              />
+            </div>
+          </div>
+        </div>
+        <div className='max-w-4xl mx-auto px-4 sm:px-6 lg:max-w-7xl lg:px-8 xl:grid xl:grid-cols-2 xl:grid-flow-col-dense xl:gap-x-8'>
+          <div className='relative pt-12 pb-64 sm:pt-24 sm:pb-64 xl:col-start-1 xl:pb-24'>
+            <p className='mt-3 text-3xl font-extrabold text-white border-style'>
+              Agents Wanted
+            </p>
+            <p className='mt-5 text-lg text-gray-300'>
+              Rhoncus sagittis risus arcu erat lectus bibendum. Ut in adipiscing
+              quis in viverra tristique sem. Ornare feugiat viverra eleifend
+              fusce orci in quis amet. Sit in et vitae tortor, massa. Dapibus
+              laoreet amet lacus nibh integer quis. Eu vulputate diam sit tellus
+              quis at.
+            </p>
+            <div className='mt-12 pb-12'>
+              <div className='lg:ml-0 mb-6'>
+                <Link href='/for-agents'>
+                  <a>
+                    <button
+                      type='button'
+                      className='inline-flex items-center px-4 py-2 border-red-500 shadow-sm text-base font-medium rounded-2xl text-gray-700 bg-red-500 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 transform transition duration-500 hover:scale-110'>
+                      Find out what it takes
+                    </button>
+                  </a>
+                </Link>
               </div>
             </div>
           </div>

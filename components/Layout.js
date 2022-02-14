@@ -59,7 +59,8 @@ export default function Layout({ children, title, description, keywords }) {
 }
 
 Layout.defaultProps = {
-  title: 'WIG | Yacht Insurance Program',
-  keywords: 'WealthGuard, WIG, yacht insurance, small business insurance',
-  description: 'WealthGuard Insurance Group Yacht Insurance program',
+  title: "WIG | WealthGuard's Yacht Insurance Program",
+  keywords:
+    'WealthGuard, WealthGuard Insurance Group, WIG, yacht insurance, small business insurance',
+  description: "WealthGuard Insurance Group's Yacht Insurance program.",
 }

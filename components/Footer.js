@@ -57,7 +57,7 @@ export default function Example() {
                     <li key={item.name}>
                       <a
                         href={item.href}
-                        className='text-sm text-gray-700 hover:text-gray-900'
+                        className='text-sm text-gray-700 hover:text-gray-900 hover:underline'
                         target='_blank'
                         rel='noreferrer'>
                         {item.name}
@@ -79,7 +79,7 @@ export default function Example() {
                     <li key={item.name}>
                       <a
                         href={item.href}
-                        className='text-sm text-gray-700 hover:text-gray-900'>
+                        className='text-sm text-gray-700 hover:text-gray-900 hover:underline'>
                         {item.name}
                       </a>
                     </li>
