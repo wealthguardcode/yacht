@@ -1,6 +1,7 @@
 import Layout from '../components/Layout'
 import {
   ChevronDownIcon,
+  ChevronRightIcon,
   ChevronUpIcon,
   PlusCircleIcon,
 } from '@heroicons/react/outline'
@@ -124,20 +125,16 @@ export default function SolutionsPage() {
                   <div className='flip'>
                     <div className='flip-content'>
                       <div className='flip-front'>
-                        <a className='text-red-500'>
-                          <p className='text-lg md:text-xl text-center px-1 lg:px-2 pt-4'>
-                            A Smarter Strategy
-                          </p>
-                          <ChevronDownIcon className='h-20 transform transition duration-500 hover:scale-125 hover:text-red-500 hover:cursor-pointer mx-auto' />
-                        </a>
+                        <p className='text-lg md:text-xl text-center px-1 lg:px-2 pt-4'>
+                          A Smarter Strategy
+                        </p>
+                        <ChevronRightIcon className='h-20 mx-auto' />
                       </div>
                       <div className='flip-back'>
-                        <a className='text-red-500'>
-                          <p className='text-lg md:text-xl text-center px-1 lg:px-2 pt-4'>
-                            A Smarter Strategy
-                          </p>
-                          <ChevronDownIcon className='h-20 transform transition duration-500 hover:scale-125 hover:text-red-500 hover:cursor-pointer mx-auto' />
-                        </a>
+                        <p className='text-lg md:text-xl text-center px-1 lg:px-2 pt-4'>
+                          A Smarter Strategy
+                        </p>
+                        <ChevronRightIcon className='h-20 mx-auto' />
                       </div>
                     </div>
                   </div>
@@ -148,20 +145,16 @@ export default function SolutionsPage() {
                   <div className='flip'>
                     <div className='flip-content'>
                       <div className='flip-front'>
-                        <a className='text-red-500'>
-                          <p className='text-lg md:text-xl text-center px-1 lg:px-2 pt-4'>
-                            A Smarter Strategy
-                          </p>
-                          <ChevronDownIcon className='h-20 transform transition duration-500 hover:scale-125 hover:text-red-500 hover:cursor-pointer mx-auto' />
-                        </a>
+                        <p className='text-lg md:text-xl text-center px-1 lg:px-2 pt-4'>
+                          A Smarter Strategy
+                        </p>
+                        <ChevronRightIcon className='h-20 mx-auto' />
                       </div>
                       <div className='flip-back'>
-                        <a className='text-red-500'>
-                          <p className='text-lg md:text-xl text-center px-1 lg:px-2 pt-4'>
-                            A Smarter Strategy
-                          </p>
-                          <ChevronDownIcon className='h-20 transform transition duration-500 hover:scale-125 hover:text-red-500 hover:cursor-pointer mx-auto' />
-                        </a>
+                        <p className='text-lg md:text-xl text-center px-1 lg:px-2 pt-4'>
+                          A Smarter Strategy
+                        </p>
+                        <ChevronRightIcon className='h-20 mx-auto' />
                       </div>
                     </div>
                   </div>
@@ -179,20 +172,16 @@ export default function SolutionsPage() {
                   <div className='flip'>
                     <div className='flip-content'>
                       <div className='flip-front'>
-                        <a className='text-red-500'>
-                          <p className='text-lg md:text-xl text-center px-1 md:px-2 pt-4'>
-                            A Smarter Strategy
-                          </p>
-                          <ChevronDownIcon className='h-20 transform transition duration-500 hover:scale-125 hover:text-red-500 hover:cursor-pointer mx-auto' />
-                        </a>
+                        <p className='text-lg md:text-xl text-center px-1 md:px-2 pt-4'>
+                          A Smarter Strategy
+                        </p>
+                        <ChevronRightIcon className='h-20 mx-auto' />
                       </div>
                       <div className='flip-back'>
-                        <a className='text-red-500'>
-                          <p className='text-lg md:text-xl text-center px-1 md:px-2 pt-4'>
-                            A Smarter Strategy
-                          </p>
-                          <ChevronDownIcon className='h-20 transform transition duration-500 hover:scale-125 hover:text-red-500 hover:cursor-pointer mx-auto' />
-                        </a>
+                        <p className='text-lg md:text-xl text-center px-1 md:px-2 pt-4'>
+                          A Smarter Strategy
+                        </p>
+                        <ChevronRightIcon className='h-20 mx-auto' />
                       </div>
                     </div>
                   </div>
@@ -202,20 +191,16 @@ export default function SolutionsPage() {
                   <div className='flip'>
                     <div className='flip-content'>
                       <div className='flip-front'>
-                        <a className='text-red-500'>
-                          <p className='text-lg md:text-xl text-center px-1 md:px-2 pt-4'>
-                            A Smarter Strategy
-                          </p>
-                          <ChevronDownIcon className='h-20 transform transition duration-500 hover:scale-125 hover:text-red-500 hover:cursor-pointer mx-auto' />
-                        </a>
+                        <p className='text-lg md:text-xl text-center px-1 md:px-2 pt-4'>
+                          A Smarter Strategy
+                        </p>
+                        <ChevronRightIcon className='h-20 mx-auto' />
                       </div>
                       <div className='flip-back'>
-                        <a className='text-red-500'>
-                          <p className='text-lg md:text-xl text-center px-1 md:px-2 pt-4'>
-                            A Smarter Strategy
-                          </p>
-                          <ChevronDownIcon className='h-20 transform transition duration-500 hover:scale-125 hover:text-red-500 hover:cursor-pointer mx-auto' />
-                        </a>
+                        <p className='text-lg md:text-xl text-center px-1 md:px-2 pt-4'>
+                          A Smarter Strategy
+                        </p>
+                        <ChevronRightIcon className='h-20 mx-auto' />
                       </div>
                     </div>
                   </div>
