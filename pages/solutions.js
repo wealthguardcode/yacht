@@ -1,8 +1,10 @@
 import Layout from '../components/Layout'
+import { ChevronDownIcon, ChevronUpIcon } from '@heroicons/react/outline'
 
 export default function SolutionsPage() {
   return (
     <Layout title={'WIG | Solutions'}>
+      {/* Image carousel section */}
       <div
         id='carouselExampleCrossfade'
         className='carousel slide carousel-fade'
@@ -73,7 +75,7 @@ export default function SolutionsPage() {
 
       {/* Main content */}
       <div className='bg-white'>
-        <div className='max-w-7xl mx-auto py-8 md:py-16 px-4 lg:px-8'>
+        <div className='max-w-7xl mx-auto py-8 md:pt-16 px-4 lg:px-8'>
           <div className='text-left'>
             {/* <h2 className='text-base font-semibold text-indigo-600 tracking-wide uppercase'>
               Pricing
@@ -98,6 +100,116 @@ export default function SolutionsPage() {
               Vivamus facilisis velit lacinia justo condimentum fringilla.
               Curabitur at rhoncus odio. Aliquam erat volutpat.
             </p>
+          </div>
+        </div>
+      </div>
+
+      {/* CTA section */}
+      <div className='bg-white'>
+        <div className='max-w-7xl mx-auto px-1 md:px-4 pt-2 pb-8 md:pt-4 lg:px-8'>
+          <div className='grid grid-cols-1 lg:grid-cols-2 my-2'>
+            <div className='flex flex-col mx-auto mb-4'>
+              <div className='bg-red-500 rounded-lg mx-2.5 mb-2 max-w-3xl'>
+                <h1 className='text-gray-900 text-lg md:text-2xl text-center font-extrabold py-2'>
+                  Yacht Program Benefits
+                </h1>
+              </div>
+              <div className='grid grid-cols-1'>
+                <div className='flex justify-center'>
+                  <div className='flip'>
+                    <div className='flip-content'>
+                      <div className='flip-front'>
+                        <a href='#smarter-stragety' className='text-red-500'>
+                          <p className='text-lg md:text-xl text-center px-1 lg:px-2 pt-4'>
+                            A Smarter Strategy
+                          </p>
+                          <ChevronDownIcon className='h-20 transform transition duration-500 hover:scale-125 hover:text-red-500 hover:cursor-pointer mx-auto' />
+                        </a>
+                      </div>
+                      <div className='flip-back'>
+                        <a href='#smarter-stragety' className='text-red-500'>
+                          <p className='text-lg md:text-xl text-center px-1 lg:px-2 pt-4'>
+                            A Smarter Strategy
+                          </p>
+                          <ChevronDownIcon className='h-20 transform transition duration-500 hover:scale-125 hover:text-red-500 hover:cursor-pointer mx-auto' />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div className='flip'>
+                    <div className='flip-content'>
+                      <div className='flip-front'>
+                        <a href='#smarter-stragety' className='text-red-500'>
+                          <p className='text-lg md:text-xl text-center px-1 lg:px-2 pt-4'>
+                            A Smarter Strategy
+                          </p>
+                          <ChevronDownIcon className='h-20 transform transition duration-500 hover:scale-125 hover:text-red-500 hover:cursor-pointer mx-auto' />
+                        </a>
+                      </div>
+                      <div className='flip-back'>
+                        <a href='#smarter-stragety' className='text-red-500'>
+                          <p className='text-lg md:text-xl text-center px-1 lg:px-2 pt-4'>
+                            A Smarter Strategy
+                          </p>
+                          <ChevronDownIcon className='h-20 transform transition duration-500 hover:scale-125 hover:text-red-500 hover:cursor-pointer mx-auto' />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className='flex flex-col mx-auto'>
+              <div className='bg-gray-900 rounded-lg mx-2.5 mb-2 max-w-3xl'>
+                <h1 className='text-gray-50 text-lg md:text-2xl text-center font-extrabold py-2'>
+                  Integrated Cost Management
+                </h1>
+              </div>
+              <div className='grid grid-cols-1'>
+                <div className='flex justify-center'>
+                  <div className='flip'>
+                    <div className='flip-content'>
+                      <div className='flip-front'>
+                        <a href='#smarter-stragety' className='text-red-500'>
+                          <p className='text-lg md:text-xl text-center px-1 md:px-2 pt-4'>
+                            A Smarter Strategy
+                          </p>
+                          <ChevronDownIcon className='h-20 transform transition duration-500 hover:scale-125 hover:text-red-500 hover:cursor-pointer mx-auto' />
+                        </a>
+                      </div>
+                      <div className='flip-back'>
+                        <a href='#smarter-stragety' className='text-red-500'>
+                          <p className='text-lg md:text-xl text-center px-1 md:px-2 pt-4'>
+                            A Smarter Strategy
+                          </p>
+                          <ChevronDownIcon className='h-20 transform transition duration-500 hover:scale-125 hover:text-red-500 hover:cursor-pointer mx-auto' />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div className='flip'>
+                    <div className='flip-content'>
+                      <div className='flip-front'>
+                        <a href='#smarter-stragety' className='text-red-500'>
+                          <p className='text-lg md:text-xl text-center px-1 md:px-2 pt-4'>
+                            A Smarter Strategy
+                          </p>
+                          <ChevronDownIcon className='h-20 transform transition duration-500 hover:scale-125 hover:text-red-500 hover:cursor-pointer mx-auto' />
+                        </a>
+                      </div>
+                      <div className='flip-back'>
+                        <a href='#smarter-stragety' className='text-red-500'>
+                          <p className='text-lg md:text-xl text-center px-1 md:px-2 pt-4'>
+                            A Smarter Strategy
+                          </p>
+                          <ChevronDownIcon className='h-20 transform transition duration-500 hover:scale-125 hover:text-red-500 hover:cursor-pointer mx-auto' />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
