@@ -345,13 +345,13 @@ export default function Home() {
             </div>
             <div className='flex justify-around items-center'>
               <div className='flex flex-col items-center py-6 md:py-2'>
-                <Link href='/images/home/theWealthGuardDifference.pdf'>
+                <Link href='/images/resources/theWealthGuardDifference.pdf'>
                   <a
                     className='hover:text-red-700'
                     target='_blank'
                     rel='noreferrer'>
                     <img
-                      src='/images/home/theWealthGuardDiffernece-cover.png'
+                      src='/images/resources/theWealthGuardDiffernece-cover.png'
                       alt="WealthGuard's Agent Retention Flyer"
                       className='h-40 w-28 shadow-xl hover:shadow-2xl hover:cursor-pointer mx-auto'
                     />
@@ -360,13 +360,13 @@ export default function Home() {
                 </Link>
               </div>
               <div className='flex flex-col items-center'>
-                <Link href='/images/home/yachtInsuranceProgram.pdf'>
+                <Link href='/images/resources/yachtInsuranceProgram.pdf'>
                   <a
                     className='hover:text-red-700'
                     target='_blank'
                     rel='noreferrer'>
                     <img
-                      src='/images/home/yachtInsuranceProgram-cover.png'
+                      src='/images/resources/yachtInsuranceProgram-cover.png'
                       alt="WealthGuard's Yacht Insurance Program"
                       className='h-40 w-28 shadow-xl hover:shadow-2xl hover:cursor-pointer mx-auto'
                     />

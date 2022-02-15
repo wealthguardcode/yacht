@@ -19,6 +19,15 @@
   background-size: cover;
   -o-background-size: cover;
 }
+.carousel-item img {
+  width: 100%;
+
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
 
 /* Navigation */
 .hover-style h1 {
