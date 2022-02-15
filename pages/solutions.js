@@ -1,5 +1,9 @@
 import Layout from '../components/Layout'
-import { ChevronDownIcon, ChevronUpIcon } from '@heroicons/react/outline'
+import {
+  ChevronDownIcon,
+  ChevronUpIcon,
+  PlusCircleIcon,
+} from '@heroicons/react/outline'
 
 export default function SolutionsPage() {
   return (
@@ -114,12 +118,13 @@ export default function SolutionsPage() {
                   Yacht Program Benefits
                 </h1>
               </div>
+
               <div className='grid grid-cols-1'>
                 <div className='flex justify-center'>
                   <div className='flip'>
                     <div className='flip-content'>
                       <div className='flip-front'>
-                        <a href='#smarter-stragety' className='text-red-500'>
+                        <a className='text-red-500'>
                           <p className='text-lg md:text-xl text-center px-1 lg:px-2 pt-4'>
                             A Smarter Strategy
                           </p>
@@ -127,7 +132,7 @@ export default function SolutionsPage() {
                         </a>
                       </div>
                       <div className='flip-back'>
-                        <a href='#smarter-stragety' className='text-red-500'>
+                        <a className='text-red-500'>
                           <p className='text-lg md:text-xl text-center px-1 lg:px-2 pt-4'>
                             A Smarter Strategy
                           </p>
@@ -136,10 +141,14 @@ export default function SolutionsPage() {
                       </div>
                     </div>
                   </div>
+                  <div className='bg-gray-900 rounded-full absolute my-32 z-10'>
+                    <PlusCircleIcon className='h-14 md:h-16 text-red-500' />
+                  </div>
+
                   <div className='flip'>
                     <div className='flip-content'>
                       <div className='flip-front'>
-                        <a href='#smarter-stragety' className='text-red-500'>
+                        <a className='text-red-500'>
                           <p className='text-lg md:text-xl text-center px-1 lg:px-2 pt-4'>
                             A Smarter Strategy
                           </p>
@@ -147,7 +156,7 @@ export default function SolutionsPage() {
                         </a>
                       </div>
                       <div className='flip-back'>
-                        <a href='#smarter-stragety' className='text-red-500'>
+                        <a className='text-red-500'>
                           <p className='text-lg md:text-xl text-center px-1 lg:px-2 pt-4'>
                             A Smarter Strategy
                           </p>
@@ -170,7 +179,7 @@ export default function SolutionsPage() {
                   <div className='flip'>
                     <div className='flip-content'>
                       <div className='flip-front'>
-                        <a href='#smarter-stragety' className='text-red-500'>
+                        <a className='text-red-500'>
                           <p className='text-lg md:text-xl text-center px-1 md:px-2 pt-4'>
                             A Smarter Strategy
                           </p>
@@ -178,7 +187,7 @@ export default function SolutionsPage() {
                         </a>
                       </div>
                       <div className='flip-back'>
-                        <a href='#smarter-stragety' className='text-red-500'>
+                        <a className='text-red-500'>
                           <p className='text-lg md:text-xl text-center px-1 md:px-2 pt-4'>
                             A Smarter Strategy
                           </p>
@@ -187,10 +196,13 @@ export default function SolutionsPage() {
                       </div>
                     </div>
                   </div>
+                  <div className='bg-gray-900 rounded-full absolute my-32 z-10'>
+                    <PlusCircleIcon className='h-14 md:h-16 text-red-500' />
+                  </div>
                   <div className='flip'>
                     <div className='flip-content'>
                       <div className='flip-front'>
-                        <a href='#smarter-stragety' className='text-red-500'>
+                        <a className='text-red-500'>
                           <p className='text-lg md:text-xl text-center px-1 md:px-2 pt-4'>
                             A Smarter Strategy
                           </p>
@@ -198,7 +210,7 @@ export default function SolutionsPage() {
                         </a>
                       </div>
                       <div className='flip-back'>
-                        <a href='#smarter-stragety' className='text-red-500'>
+                        <a className='text-red-500'>
                           <p className='text-lg md:text-xl text-center px-1 md:px-2 pt-4'>
                             A Smarter Strategy
                           </p>
