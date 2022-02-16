@@ -119,46 +119,56 @@ export default function SolutionsPage() {
                   Yacht Program Benefits
                 </h1>
               </div>
+              {/* <div className='relative bottom-2'>
+                <div className='bg-gray-900 rounded-full absolute z-10 inset-center'>
+                  <PlusCircleIcon className='h-12 text-red-500' />
+                </div>
+              </div> */}
 
               <div className='grid grid-cols-1'>
                 <div className='flex justify-center'>
                   <div className='flip'>
                     <div className='flip-content'>
-                      <div className='flip-front'>
-                        <p className='text-lg md:text-xl text-center px-1 lg:px-2 pt-4'>
-                          A Smarter Strategy
+                      <div className='flip-front flex flex-col justify-center'>
+                        <p className='text-xl md:text-3xl text-center font-medium px-1 lg:px-2 mb-2'>
+                          Lorem ipsum dolor
                         </p>
-                        <ChevronRightIcon className='h-20 mx-auto' />
+                        <ChevronRightIcon className='h-14' />
                       </div>
-                      <div className='flip-back'>
-                        <p className='text-lg md:text-xl text-center px-1 lg:px-2 pt-4'>
-                          A Smarter Strategy
+                      <div className='flip-back  flex flex-col justify-center'>
+                        <p className='text-xl md:text-2xl text-center font-medium px-1 lg:px-2'>
+                          Fusce ut ante felis. Aenean ornare vehicula lorem et
+                          tristique.
                         </p>
-                        <ChevronRightIcon className='h-20 mx-auto' />
+                        <ChevronRightIcon className='h-14' />
                       </div>
                     </div>
                   </div>
                   <div className='bg-gray-900 rounded-full absolute my-32 z-10'>
-                    <PlusCircleIcon className='h-14 md:h-16 text-red-500' />
+                    <PlusCircleIcon className='h-12 text-red-500' />
                   </div>
 
                   <div className='flip'>
                     <div className='flip-content'>
-                      <div className='flip-front'>
-                        <p className='text-lg md:text-xl text-center px-1 lg:px-2 pt-4'>
-                          A Smarter Strategy
+                      <div className='flip-front flex flex-col justify-center'>
+                        <p className='text-xl md:text-3xl text-center font-medium px-1 lg:px-2 mb-2'>
+                          Lorem ipsum dolor
                         </p>
-                        <ChevronRightIcon className='h-20 mx-auto' />
+                        <ChevronRightIcon className='h-14' />
                       </div>
-                      <div className='flip-back'>
-                        <p className='text-lg md:text-xl text-center px-1 lg:px-2 pt-4'>
-                          A Smarter Strategy
+                      <div className='flip-back  flex flex-col justify-center'>
+                        <p className='text-xl md:text-2xl text-center font-medium px-1 lg:px-2'>
+                          Fusce ut ante felis. Aenean ornare vehicula lorem et
+                          tristique.
                         </p>
-                        <ChevronRightIcon className='h-20 mx-auto' />
+                        <ChevronRightIcon className='h-14' />
                       </div>
                     </div>
                   </div>
                 </div>
+                <p className='mx-auto mt-3 md:mt-4 md:text-lg font-medium underline'>
+                  Learn more about WealthGuard Yacht Insurance
+                </p>
               </div>
             </div>
             <div className='flex flex-col mx-auto'>
@@ -171,41 +181,46 @@ export default function SolutionsPage() {
                 <div className='flex justify-center'>
                   <div className='flip'>
                     <div className='flip-content'>
-                      <div className='flip-front'>
-                        <p className='text-lg md:text-xl text-center px-1 md:px-2 pt-4'>
-                          A Smarter Strategy
+                      <div className='flip-front flex flex-col justify-center'>
+                        <p className='text-xl md:text-3xl text-center font-medium px-1 lg:px-2 mb-2'>
+                          Lorem ipsum dolor
                         </p>
-                        <ChevronRightIcon className='h-20 mx-auto' />
+                        <ChevronRightIcon className='h-14' />
                       </div>
-                      <div className='flip-back'>
-                        <p className='text-lg md:text-xl text-center px-1 md:px-2 pt-4'>
-                          A Smarter Strategy
+                      <div className='flip-back  flex flex-col justify-center'>
+                        <p className='text-xl md:text-2xl text-center font-medium px-1 lg:px-2'>
+                          Fusce ut ante felis. Aenean ornare vehicula lorem et
+                          tristique.
                         </p>
-                        <ChevronRightIcon className='h-20 mx-auto' />
+                        <ChevronRightIcon className='h-14' />
                       </div>
                     </div>
                   </div>
                   <div className='bg-gray-900 rounded-full absolute my-32 z-10'>
-                    <PlusCircleIcon className='h-14 md:h-16 text-red-500' />
+                    <PlusCircleIcon className='h-12 text-red-500' />
                   </div>
                   <div className='flip'>
                     <div className='flip-content'>
-                      <div className='flip-front'>
-                        <p className='text-lg md:text-xl text-center px-1 md:px-2 pt-4'>
-                          A Smarter Strategy
+                      <div className='flip-front flex flex-col justify-center'>
+                        <p className='text-xl md:text-3xl text-center font-medium px-1 lg:px-2 mb-2'>
+                          Lorem ipsum dolor
                         </p>
-                        <ChevronRightIcon className='h-20 mx-auto' />
+                        <ChevronRightIcon className='h-14' />
                       </div>
-                      <div className='flip-back'>
-                        <p className='text-lg md:text-xl text-center px-1 md:px-2 pt-4'>
-                          A Smarter Strategy
+                      <div className='flip-back  flex flex-col justify-center'>
+                        <p className='text-xl md:text-2xl text-center font-medium px-1 lg:px-2'>
+                          Fusce ut ante felis. Aenean ornare vehicula lorem et
+                          tristique.
                         </p>
-                        <ChevronRightIcon className='h-20 mx-auto' />
+                        <ChevronRightIcon className='h-14' />
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
+              <p className='mx-auto mt-3 md:mt-4 md:text-lg font-medium underline'>
+                Learn more about WealthGuard Yacht Insurance
+              </p>
             </div>
           </div>
         </div>

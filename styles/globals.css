@@ -121,6 +121,14 @@ h1.fromLeft:after {
   box-shadow: 6px 6px #ef4444;
 }
 
+.inset-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-bottom: 1rem;
+  transform: translate(615%, -100%);
+}
+
 /* Media Queries */
 
 /* Large */
@@ -137,12 +145,39 @@ h1.fromLeft:after {
   .carousel-wrapper {
     height: 40rem;
   }
+
+  .inset-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(610%, -100%);
+  }
 }
 
 /*Portrait*/
 @media only screen and (max-width: 1024px) and (orientation: portrait) {
   .carousel-wrapper {
     height: 30rem;
+  }
+
+  .inset-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(410%, -100%);
+  }
+}
+
+@media only screen and (min-width: 1113px) and (max-width: 1250px) {
+  .carousel-wrapper {
+    height: 30rem;
+  }
+
+  .inset-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(530%, -100%);
   }
 }
 
@@ -151,12 +186,37 @@ h1.fromLeft:after {
   .carousel-wrapper {
     height: 30rem;
   }
+
+  .inset-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(525%, -100%);
+  }
+
+  /* .inset-center {
+    display: none;
+  } */
+}
+
+@media only screen and (max-width: 1023px) and (orientation: landscape) {
+  .carousel-wrapper {
+    height: 30rem;
+  }
+
+  .inset-center {
+    display: none;
+  }
 }
 
 /*Portrait*/
 @media only screen and (max-width: 834px) and (orientation: portrait) {
   .carousel-wrapper {
     height: 24rem;
+  }
+
+  .inset-center {
+    display: none;
   }
 }
 
@@ -174,5 +234,9 @@ h1.fromLeft:after {
     float: left;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
+  }
+
+  .inset-center {
+    display: none;
   }
 }
