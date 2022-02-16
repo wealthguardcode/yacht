@@ -225,6 +225,51 @@ export default function SolutionsPage() {
           </div>
         </div>
       </div>
+
+      {/* Done Right Section */}
+      <div className='bg-gray-900 grid grid-cols-1 md:grid-cols-2 py-8'>
+        <div className='max-w-3xl mx-auto pt-16 pb-8 md:pb-16 px-4 sm:px-6 lg:px-8'>
+          <h2 className='text-2xl md:text-3xl font-extrabold text-white border-style'>
+            <span className='block'>
+              <span className='text-red-500'>Wealth</span>
+              <span className='text-gray-400'>Guard</span> means insurance done
+              right.
+            </span>
+          </h2>
+          <p className='mt-4 text-lg leading-6 font-medium text-gray-200'>
+            Self-insurance makes sense.
+          </p>
+          <p className='mt-4 text-lg leading-6 text-gray-200'>
+            Ac euismod vel sit maecenas id pellentesque eu sed consectetur.
+            Malesuada adipiscing sagittis vel nulla nec. Ac euismod vel sit
+            maecenas id pellentesque eu sed consectetur. Malesuada adipiscing
+            sagittis vel nulla nec.
+          </p>
+          <p className='mt-4 text-lg leading-6 text-gray-200'>
+            Ac euismod vel sit maecenas id pellentesque eu sed consectetur.
+            Malesuada adipiscing sagittis vel nulla nec. Ac euismod vel sit
+            maecenas id pellentesque eu sed consectetur. Malesuada adipiscing
+            sagittis vel nulla nec.
+          </p>
+        </div>
+        <div className='max-w-3xl mx-auto pb-16 md:pt-24 px-4 sm:px-6 lg:px-8 md:flex md:flex-col md:justify-center'>
+          <p className='mt-4 text-lg leading-6 font-medium text-gray-200'>
+            The captive makes it possible.
+          </p>
+          <p className='mt-4 text-lg leading-6 text-gray-200'>
+            Ac euismod vel sit maecenas id pellentesque eu sed consectetur.
+            Malesuada adipiscing sagittis vel nulla nec. Ac euismod vel sit
+            maecenas id pellentesque eu sed consectetur. Malesuada adipiscing
+            sagittis vel nulla nec.
+          </p>
+          <p className='mt-4 text-lg leading-6 text-gray-200'>
+            Ac euismod vel sit maecenas id pellentesque eu sed consectetur.
+            Malesuada adipiscing sagittis vel nulla nec. Ac euismod vel sit
+            maecenas id pellentesque eu sed consectetur. Malesuada adipiscing
+            sagittis vel nulla nec.
+          </p>
+        </div>
+      </div>
     </Layout>
   )
 }
