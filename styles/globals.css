@@ -129,6 +129,20 @@ h1.fromLeft:after {
   transform: translate(615%, -100%);
 }
 
+/* Resources page */
+.rsc-border-style:after {
+  display: block;
+  content: '';
+  width: 5rem;
+  padding-top: 1.2rem;
+  border-bottom: solid 3px #ef4444;
+  margin: auto;
+}
+
+.resource-card {
+  width: 300px;
+}
+
 /* Media Queries */
 
 /* Large */
@@ -257,5 +271,9 @@ h1.fromLeft:after {
     float: left;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
+  }
+
+  .resource-card {
+    width: 250px;
   }
 }
