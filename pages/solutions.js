@@ -120,11 +120,11 @@ export default function SolutionsPage() {
                   Yacht Program Benefits
                 </h1>
               </div>
-              {/* <div className='relative bottom-2'>
-                <div className='bg-gray-900 rounded-full absolute z-10 inset-center'>
+              <div className='relative mr-4 md:ml-2 md:mr-0'>
+                <div className='bg-gray-900 rounded-full hidden lg:inline-block lg:absolute z-10 xl:top-1/2 xl:left-1/2 xl:transform xl:translate-x-72 xl:-translate-y-14 disc'>
                   <PlusCircleIcon className='h-12 text-red-500' />
                 </div>
-              </div> */}
+              </div>
 
               <div className='grid grid-cols-1'>
                 <div className='flex justify-center'>
@@ -167,7 +167,7 @@ export default function SolutionsPage() {
                     </div>
                   </div>
                 </div>
-                <p className='mx-auto mt-3 md:mt-4 md:text-lg font-medium underline'>
+                <p className='mx-auto mt-3 md:mt-4 md:text-lg font-medium underline hover:cursor-pointer'>
                   Learn more about WealthGuard Yacht Insurance
                 </p>
               </div>
@@ -219,7 +219,7 @@ export default function SolutionsPage() {
                   </div>
                 </div>
               </div>
-              <p className='mx-auto mt-3 md:mt-4 md:text-lg font-medium underline'>
+              <p className='mx-auto mt-3 md:mt-4 md:text-lg font-medium underline hover:cursor-pointer'>
                 Learn more about WealthGuard Yacht Insurance
               </p>
             </div>
@@ -336,6 +336,55 @@ export default function SolutionsPage() {
           </div>
         </div>
       </div>
+
+      {/* Resources Section */}
+      <section className='bg-white'>
+        <div className='max-w-full mx-auto px-1 md:px-4 py-8 md:py-24 lg:px-8'>
+          <div className='grid grid-cols-1 lg:grid-cols-2'>
+            <div className='flex flex-col md:pb-5 mx-auto py-12 md:py-4'>
+              <p className='max-w-xl mx-2 px-2 font-bold text-gray-900 text-3xl border-style'>
+                Recommended Resources
+              </p>
+              <p className='max-w-xl mx-2 px-2 py-4 font-medium text-gray-900'>
+                Stay informed to get the most out of WealthGuard&apos;s
+                Insurance Programs.
+              </p>
+            </div>
+            <div className='flex justify-around items-center py-10 md:py-6'>
+              <div className='flex flex-col items-center py-6 md:py-2'>
+                <Link href='/images/resources/theWealthGuardDifference.pdf'>
+                  <a
+                    className='hover:text-red-700'
+                    target='_blank'
+                    rel='noreferrer'>
+                    <img
+                      src='/images/resources/theWealthGuardDiffernece-cover.png'
+                      alt="WealthGuard's Agent Retention Flyer"
+                      className='h-40 w-28 shadow-xl hover:shadow-2xl hover:cursor-pointer mx-auto'
+                    />
+                    <p className='text-sm my-2'>The WealthGuard Difference</p>
+                  </a>
+                </Link>
+              </div>
+              <div className='flex flex-col items-center'>
+                <Link href='/images/resources/yachtInsuranceProgram.pdf'>
+                  <a
+                    className='hover:text-red-700'
+                    target='_blank'
+                    rel='noreferrer'>
+                    <img
+                      src='/images/resources/yachtInsuranceProgram-cover.png'
+                      alt="WealthGuard's Yacht Insurance Program"
+                      className='h-40 w-28 shadow-xl hover:shadow-2xl hover:cursor-pointer mx-auto'
+                    />
+                    <p className='text-sm my-2'>Yacht Insurance Program</p>
+                  </a>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </Layout>
   )
 }
