@@ -142,8 +142,9 @@ h1.fromLeft:after {
 .resource-card {
   width: 300px;
 }
-
+/* ------------- */
 /* Media Queries */
+/* ------------- */
 
 /* Large */
 @media only screen and (max-width: 2100px) {
@@ -158,13 +159,6 @@ h1.fromLeft:after {
 @media only screen and (max-width: 1366px) and (orientation: landscape) {
   .carousel-wrapper {
     height: 40rem;
-  }
-
-  .inset-center {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(610%, -100%);
   }
 }
 
@@ -181,6 +175,46 @@ h1.fromLeft:after {
     transform: translate(410%, -100%);
   }
 }
+
+/* Landscape */
+@media only screen and (max-width: 1112px) and (orientation: landscape) {
+  .carousel-wrapper {
+    height: 30rem;
+  }
+}
+
+/*Portrait*/
+@media only screen and (max-width: 834px) and (orientation: portrait) {
+  .carousel-wrapper {
+    height: 24rem;
+  }
+}
+
+/* Mobile */
+@media only screen and (max-width: 600px) {
+  .carousel-wrapper {
+    height: 16rem;
+  }
+
+  .flip {
+    width: 300px;
+    height: 325px;
+    text-align: center;
+    perspective: 600px;
+    float: left;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+
+  .resource-card {
+    width: 250px;
+  }
+}
+
+/* ------------------ */
+/* Disc Media Queries */
+/* ------------------ */
+
 @media only screen and (min-width: 1024px) and (max-width: 1280px) {
   .disc {
     position: absolute;
@@ -237,43 +271,8 @@ h1.fromLeft:after {
   }
 }
 
-/* Landscape */
-@media only screen and (max-width: 1112px) and (orientation: landscape) {
-  .carousel-wrapper {
-    height: 30rem;
-  }
-}
-
 @media only screen and (max-width: 1023px) and (orientation: landscape) {
   .carousel-wrapper {
     height: 30rem;
-  }
-}
-
-/*Portrait*/
-@media only screen and (max-width: 834px) and (orientation: portrait) {
-  .carousel-wrapper {
-    height: 24rem;
-  }
-}
-
-/* Mobile */
-@media only screen and (max-width: 600px) {
-  .carousel-wrapper {
-    height: 16rem;
-  }
-
-  .flip {
-    width: 300px;
-    height: 325px;
-    text-align: center;
-    perspective: 600px;
-    float: left;
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
-  }
-
-  .resource-card {
-    width: 250px;
   }
 }

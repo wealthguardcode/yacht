@@ -86,7 +86,7 @@ const resources = [
 
 export default function ResourcesPage() {
   return (
-    <Layout>
+    <Layout title={'WIG | Resources'}>
       {/* Featured Resources Section */}
       <div className='bg-white'>
         <div className='max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8'>
