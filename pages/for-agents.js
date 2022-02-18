@@ -1,4 +1,20 @@
+import { CheckIcon } from '@heroicons/react/outline'
+import Link from 'next/link'
 import Layout from '../components/Layout'
+
+const stats = [
+  { id: 1, title: 'captive members', number: '1,690' },
+  { id: 2, title: 'yachts covered', number: '1000' },
+  { id: 3, title: 'in stop-loss premiums', number: '$500M' },
+  { id: 4, title: 'renewals to date', number: '3,900' },
+]
+
+const features = [
+  { id: 1, title: 'Protection against broker-of-record letters' },
+  { id: 2, title: 'Comprehensive training programs year-round' },
+  { id: 3, title: 'Hands-on mentorship to help you gain early traction' },
+  { id: 4, title: 'Insider access to captive members meetings and more' },
+]
 
 export default function ForAgentsPage() {
   return (
@@ -132,6 +148,72 @@ export default function ForAgentsPage() {
               Aenean tincidunt nunc ligula, a aliquet justo condimentum sed.
               Etiam ante ipsum, tristique id augue vel, venenatis finibus purus
             </p>
+          </div>
+        </div>
+      </div>
+
+      {/* Stats Section */}
+      <div className='bg-gray-900 md:px-24 pt-6 pb-20'>
+        <div className='max-w-7xl mx-auto pt-10 md:pt-12 pb-8 md:pb-16 px-4 sm:px-6 lg:px-8'>
+          <h2 className='text-3xl md:text-4xl font-extrabold border-style text-white'>
+            <span className='block'>
+              <span className='text-red-500'>Wealth</span>
+              <span className='text-gray-400'>Guard</span> can help you save
+              with Yacht Insurance.
+            </span>
+          </h2>
+          <p className='mt-2 text-lg md:text-xl leading-6 font-medium text-gray-200 py-10'>
+            Our agent partners deliver the kind of value that drives remarkable
+            growth.
+          </p>
+        </div>
+
+        <grid className='grid grid-cols-1 md:grid-cols-2 gap-4 justify-content-center max-w-2xl mx-auto'>
+          {stats.map((stat) => (
+            <div
+              key={stat.id}
+              className='border-3 border-red-500 rounded-lg w-60 flex flex-col px-4 py-6 mx-auto'>
+              <p className='text-red-500 text-4xl font-extrabold text-center'>
+                {stat.number}+
+              </p>
+              <p className='text-gray-200 font-semibold tracking-tight mt-1 text-center'>
+                {stat.title}
+              </p>
+            </div>
+          ))}
+        </grid>
+      </div>
+
+      {/* We're with you section */}
+      <div className='bg-white grid grid-cols-1 md:grid-cols-2 py-8 max-w-7xl mx-auto'>
+        <div className='max-w-3xl mx-auto pt-16 pb-8 md:pb-16 px-4 sm:px-6 lg:px-8'>
+          <h2 className='text-2xl md:text-3xl font-extrabold text-gray-900 border-style'>
+            <span className='block'>
+              We&apos;re with you every step of the way.
+            </span>
+          </h2>
+
+          <p className='mt-10 text-lg leading-6 text-gray-900'>
+            Ac euismod vel sit maecenas id pellentesque eu sed consectetur.
+            Malesuada adipiscing sagittis vel nulla nec. Ac euismod vel sit
+            maecenas id pellentesque eu sed consectetur.
+          </p>
+          <p className='mt-4 text-lg leading-6 text-gray-900'>
+            Ac euismod vel sit maecenas id pellentesque eu sed consectetur.
+            Malesuada adipiscing sagittis vel nulla nec. Ac euismod vel sit
+            maecenas id pellentesque.
+          </p>
+        </div>
+        <div className='max-w-3xl mx-auto pb-16 md:pt-24 px-4 sm:px-6 lg:px-8 md:flex md:flex-col md:justify-center'>
+          <div className='flex flex-col'>
+            {features.map((feature) => (
+              <p
+                key={feature.id}
+                className='mt-3 text-lg leading-6 text-gray-900 inline-flex'>
+                <CheckIcon className='h-10 text-green-500' />
+                <span className='ml-2 self-center'>{feature.title}</span>
+              </p>
+            ))}
           </div>
         </div>
       </div>
