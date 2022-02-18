@@ -345,7 +345,7 @@ export default function SolutionsPage() {
               <p className='max-w-xl mx-2 px-2 font-bold text-gray-900 text-3xl border-style'>
                 Recommended Resources
               </p>
-              <p className='max-w-xl mx-2 px-2 py-4 font-medium text-gray-900'>
+              <p className='max-w-xl mx-2 px-2 py-4 font-medium text-lg text-gray-900'>
                 Stay informed to get the most out of WealthGuard&apos;s
                 Insurance Programs.
               </p>

@@ -217,6 +217,125 @@ export default function ForAgentsPage() {
           </div>
         </div>
       </div>
+
+      {/* Are you ready section */}
+      <div className='bg-gray-900 grid grid-cols-1 md:grid-cols-2 py-8 text-gray-900'>
+        <div className='max-w-3xl mx-auto pt-12 md:pt-28 pb-8 md:pb-16 px-4 sm:px-6 lg:px-8'>
+          <h2 className='text-2xl md:text-3xl font-extrabold border-style text-white'>
+            <span className='block'>Are you ready?</span>
+          </h2>
+          <p className='mt-4 text-xl leading-6 font-medium text-gray-200 py-4'>
+            Donec vitae tortor sed nisi convallis vestibulum a et massa. Quisque
+            convallis iaculis urna id egestas.
+          </p>
+          <p className='mt-2 text-xl leading-6 font-medium text-gray-200 pb-10'>
+            Donec vitae tortor sed nisi convallis vestibulum a et massa. Quisque
+            convallis iaculis urna id egestas.
+          </p>
+          <Link href='/contact'>
+            <a>
+              <button
+                type='button'
+                className='inline-flex items-center px-4 py-2 border-1 border-red-500 shadow-sm text-base font-bold rounded-2xl text-gray-700 bg-red-500 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 transform transition duration-500 hover:scale-110'>
+                Make your move, now.
+              </button>
+            </a>
+          </Link>
+        </div>
+        <div className='max-w-3xl mx-auto pb-16 pt-6 md:pt-12 px-4 sm:px-6 lg:px-8 md:flex md:flex-col md:justify-center'>
+          <div className='bg-white rounded-xl px-4 py-4'>
+            <section className='bg-white'>
+              <div className='relative max-w-7xl mx-auto pt-20 pb-12 px-4 sm:px-6 lg:px-8 lg:py-20'>
+                <div className='relative lg:flex lg:items-center'>
+                  <div className='relative lg:ml-10'>
+                    <svg
+                      className='absolute top-0 left-0 transform -translate-x-8 -translate-y-24 h-36 w-36 text-red-300 opacity-50'
+                      stroke='currentColor'
+                      fill='currentColor'
+                      viewBox='0 0 144 144'
+                      aria-hidden='true'>
+                      <path
+                        strokeWidth={2}
+                        d='M41.485 15C17.753 31.753 1 59.208 1 89.455c0 24.664 14.891 39.09 32.109 39.09 16.287 0 28.386-13.03 28.386-28.387 0-15.356-10.703-26.524-24.663-26.524-2.792 0-6.515.465-7.446.93 2.327-15.821 17.218-34.435 32.11-43.742L41.485 15zm80.04 0c-23.268 16.753-40.02 44.208-40.02 74.455 0 24.664 14.891 39.09 32.109 39.09 15.822 0 28.386-13.03 28.386-28.387 0-15.356-11.168-26.524-25.129-26.524-2.792 0-6.049.465-6.98.93 2.327-15.821 16.753-34.435 31.644-43.742L121.525 15z'
+                      />
+                    </svg>
+                    <blockquote className='relative'>
+                      <div className='text-2xl leading-9 font-medium text-gray-900'>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Nemo expedita voluptas culpa sapiente alias
+                          molestiae.
+                        </p>
+                      </div>
+                      <footer className='mt-8'>
+                        <div className='flex'>
+                          <div className='ml-4 lg:ml-0'>
+                            {/* <div className='text-base font-medium text-gray-900'>
+                              John Doe
+                            </div> */}
+                            <div className='text-base font-medium text-red-600'>
+                              WealthGuard Agent since 2019
+                            </div>
+                          </div>
+                        </div>
+                      </footer>
+                    </blockquote>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+
+      {/* Resources Section */}
+      <section className='bg-white'>
+        <div className='max-w-full mx-auto px-1 md:px-4 py-8 md:py-24 lg:px-8'>
+          <div className='grid grid-cols-1 lg:grid-cols-2'>
+            <div className='flex flex-col md:pb-5 mx-auto py-12 md:py-4'>
+              <p className='max-w-xl mx-2 px-2 font-bold text-gray-900 text-3xl border-style'>
+                Recommended Resources
+              </p>
+              <p className='max-w-xl mx-2 px-2 py-4 text-lg font-medium text-gray-900'>
+                Stay informed to get the most out of WealthGuard&apos;s
+                Insurance Programs.
+              </p>
+            </div>
+            <div className='flex justify-around items-center py-10 md:py-6'>
+              <div className='flex flex-col items-center py-6 md:py-2'>
+                <Link href='/images/resources/theWealthGuardDifference.pdf'>
+                  <a
+                    className='hover:text-red-700'
+                    target='_blank'
+                    rel='noreferrer'>
+                    <img
+                      src='/images/resources/theWealthGuardDiffernece-cover.png'
+                      alt="WealthGuard's Agent Retention Flyer"
+                      className='h-40 w-28 shadow-xl hover:shadow-2xl hover:cursor-pointer mx-auto'
+                    />
+                    <p className='text-sm my-2'>The WealthGuard Difference</p>
+                  </a>
+                </Link>
+              </div>
+              <div className='flex flex-col items-center'>
+                <Link href='/images/resources/yachtInsuranceProgram.pdf'>
+                  <a
+                    className='hover:text-red-700'
+                    target='_blank'
+                    rel='noreferrer'>
+                    <img
+                      src='/images/resources/yachtInsuranceProgram-cover.png'
+                      alt="WealthGuard's Yacht Insurance Program"
+                      className='h-40 w-28 shadow-xl hover:shadow-2xl hover:cursor-pointer mx-auto'
+                    />
+                    <p className='text-sm my-2'>Yacht Insurance Program</p>
+                  </a>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </Layout>
   )
 }
