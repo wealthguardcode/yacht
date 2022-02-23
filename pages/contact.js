@@ -1,6 +1,43 @@
+import React, { useRef } from 'react'
+import emailjs from '@emailjs/browser'
+import { toast } from 'react-toastify'
 import Layout from '../components/Layout'
 
+function fun() {
+  document.getElementById('first-name').value = ''
+  document.getElementById('last-name').value = ''
+  document.getElementById('email').value = ''
+  document.getElementById('company').value = ''
+  document.getElementById('phone-number').value = ''
+  document.getElementById('message').value = ''
+}
+
 export default function ContactPage() {
+  const form = useRef()
+
+  const sendEmail = (e) => {
+    e.preventDefault()
+
+    emailjs
+      .sendForm(
+        'service_ku9lcmf',
+        'template_6opfdif',
+        form.current,
+        'user_YpYcs3PysvYZkaRiAjJEI'
+      )
+      .then(
+        (result) => {
+          toast('🎉 Message sent!')
+          console.log(result.text)
+        },
+        (error) => {
+          toast.error(error.text)
+          console.log(error.text)
+        }
+      )
+    fun()
+  }
+
   return (
     <Layout title={'WIG | Contact'}>
       <div className='relative bg-gray-500'>
@@ -42,7 +79,7 @@ export default function ContactPage() {
 
           <div className='mt-8 px-4 mx-auto w-full max-w-md md:px-0'>
             <div className='bg-white py-8 px-4 shadow rounded-lg sm:px-10'>
-              <form className='space-y-6' action='#' method='POST'>
+              <form className='space-y-6' ref={form} onSubmit={sendEmail}>
                 <div>
                   <label
                     htmlFor='first-name'
