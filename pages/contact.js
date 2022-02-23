@@ -3,7 +3,7 @@ import emailjs from '@emailjs/browser'
 import { toast } from 'react-toastify'
 import Layout from '../components/Layout'
 
-function fun() {
+function resetFields() {
   document.getElementById('first-name').value = ''
   document.getElementById('last-name').value = ''
   document.getElementById('email').value = ''
@@ -35,7 +35,7 @@ export default function ContactPage() {
           console.log(error.text)
         }
       )
-    fun()
+    resetFields()
   }
 
   return (

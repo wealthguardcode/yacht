@@ -168,7 +168,7 @@ export default function ForAgentsPage() {
           </p>
         </div>
 
-        <grid className='grid grid-cols-1 md:grid-cols-2 gap-4 justify-content-center max-w-2xl mx-auto'>
+        <div className='grid grid-cols-1 md:grid-cols-2 gap-4 justify-content-center max-w-2xl mx-auto'>
           {stats.map((stat) => (
             <div
               key={stat.id}
@@ -181,7 +181,7 @@ export default function ForAgentsPage() {
               </p>
             </div>
           ))}
-        </grid>
+        </div>
       </div>
 
       {/* We're with you section */}
