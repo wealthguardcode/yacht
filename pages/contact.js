@@ -28,6 +28,7 @@ export default function ContactPage() {
       .then(
         (result) => {
           toast('🎉 Message sent!')
+          resetFields()
           console.log(result.text)
         },
         (error) => {
@@ -35,7 +36,6 @@ export default function ContactPage() {
           console.log(error.text)
         }
       )
-    resetFields()
   }
 
   return (
