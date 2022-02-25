@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { SiLinkedin, SiFacebook } from 'react-icons/si'
 
 const navigation = {
@@ -28,11 +29,15 @@ export default function Example() {
       <div className='max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8'>
         <div className='xl:grid xl:grid-cols-3 xl:gap-8'>
           <div className='space-y-8'>
-            <img
-              className='h-16'
-              src='/images/wig-logo-full.svg'
-              alt='WealthGuard Logo'
-            />
+            <Link href='/'>
+              <a>
+                <img
+                  className='h-16'
+                  src='/images/wig-logo-full.svg'
+                  alt='WealthGuard Logo'
+                />
+              </a>
+            </Link>
           </div>
           <div className='mt-12 grid grid-cols-1 gap-8 xl:mt-0 xl:col-span-2'>
             <div className='md:grid md:grid-cols-3 md:gap-8'>
@@ -66,8 +71,18 @@ export default function Example() {
                   ))}
                 </ul>
                 <div className='flex'>
-                  <SiFacebook className='w-8 h-8 m-4  text-red-900 hover:text-gray-800 hover:cursor-pointer transform transition duration-500 hover:scale-110' />
-                  <SiLinkedin className='w-8 h-8 m-4  text-red-900 hover:text-gray-800 hover:cursor-pointer transform transition duration-500 hover:scale-110' />
+                  <a
+                    href='https://www.linkedin.com/company/wealthguardinsurancegroup'
+                    target='_blank'
+                    rel='noreferrer'>
+                    <SiLinkedin className='w-8 h-8 m-4  text-red-900 hover:text-gray-800 hover:cursor-pointer transform transition duration-500 hover:scale-110' />
+                  </a>
+                  <a
+                    href='https://www.facebook.com/WealthGuardig'
+                    target='_blank'
+                    rel='noreferrer'>
+                    <SiFacebook className='w-8 h-8 m-4  text-red-900 hover:text-gray-800 hover:cursor-pointer transform transition duration-500 hover:scale-110' />
+                  </a>
                 </div>
               </div>
               <div className='mt-12 md:mt-0 md:mx-auto'>
