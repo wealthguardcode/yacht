@@ -20,10 +20,10 @@ export default function ContactPage() {
 
     emailjs
       .sendForm(
-        'service_ku9lcmf',
-        'template_6opfdif',
+        `${process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID}`,
+        `${process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID}`,
         form.current,
-        'user_YpYcs3PysvYZkaRiAjJEI'
+        `${process.env.NEXT_PUBLIC_EMAILJS_USER_ID}`
       )
       .then(
         (result) => {
