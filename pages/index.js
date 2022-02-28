@@ -281,10 +281,14 @@ export default function Home() {
         <div className='h-80 absolute inset-x-0 bottom-0 xl:top-0 xl:h-full'>
           <div className='h-full w-full xl:grid xl:grid-cols-2'>
             <div className='h-full xl:relative xl:col-start-2'>
-              <img
+              <Image
                 className='h-full w-full object-cover opacity-50 xl:absolute xl:inset-0'
                 src='/images/home/yacht-9.jpeg'
                 alt='Yacht docked in the sunset'
+                width={940}
+                height={490}
+                layout='fill'
+                objectFit='cover'
               />
               <div
                 aria-hidden='true'
