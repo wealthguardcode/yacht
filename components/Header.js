@@ -52,7 +52,7 @@ export default function Header() {
                       <img
                         className='block lg:hidden h-10 w-auto'
                         src='/images/wig-logo-full.svg'
-                        alt='Workflow'
+                        alt='WealthGuard logo'
                       />
                     </a>
                   </Link>
@@ -61,7 +61,7 @@ export default function Header() {
                       <img
                         className='hidden lg:block h-12 w-auto'
                         src='/images/wig-logo-full.svg'
-                        alt='Workflow'
+                        alt='WealthGuard logo'
                       />
                     </a>
                   </Link>
