@@ -74,14 +74,22 @@ export default function Example() {
                   <a
                     href='https://www.linkedin.com/company/wealthguardinsurancegroup'
                     target='_blank'
-                    rel='noreferrer'>
-                    <SiLinkedin className='w-8 h-8 m-4  text-red-900 hover:text-gray-800 hover:cursor-pointer transform transition duration-500 hover:scale-110' />
+                    rel='noreferrer'
+                    aria-label="Wealthguard's LinkedIn">
+                    <SiLinkedin
+                      alt="Wealthguard's LinkedIn"
+                      className='w-8 h-8 m-4  text-red-900 hover:text-gray-800 hover:cursor-pointer transform transition duration-500 hover:scale-110'
+                    />
                   </a>
                   <a
                     href='https://www.facebook.com/WealthGuardig'
                     target='_blank'
-                    rel='noreferrer'>
-                    <SiFacebook className='w-8 h-8 m-4  text-red-900 hover:text-gray-800 hover:cursor-pointer transform transition duration-500 hover:scale-110' />
+                    rel='noreferrer'
+                    aria-label="Wealthguard's Facebook">
+                    <SiFacebook
+                      alt="Wealthguard's Facebook"
+                      className='w-8 h-8 m-4  text-red-900 hover:text-gray-800 hover:cursor-pointer transform transition duration-500 hover:scale-110'
+                    />
                   </a>
                 </div>
               </div>
