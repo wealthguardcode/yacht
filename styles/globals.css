@@ -82,6 +82,21 @@ h1.fromLeft:after {
   z-index: 1;
 }
 
+.resource-image-container {
+  padding: 16px;
+}
+.resource-image-container span {
+  overflow: visible !important;
+}
+.resource-image-container img {
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.15);
+}
+
+/* .resource-card:hover {
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.15);
+} */
+
 /* Solutions Page */
 .flip {
   width: 300px;

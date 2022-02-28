@@ -3,7 +3,6 @@ import Layout from '../components/Layout'
 import { useState } from 'react'
 import { ChevronDownIcon } from '@heroicons/react/outline'
 import ImageSlider from '../components/ImageSlider'
-
 import VideoPlayer from '../components/VideoPlayer'
 import Link from 'next/link'
 
@@ -238,31 +237,35 @@ export default function Home() {
               </p>
             </div>
             <div className='flex justify-around items-center'>
-              <div className='flex flex-col items-center py-6 md:py-2'>
+              <div className='flex flex-col justify-center items-center text-center py-6 md:py-2 resource-image-container'>
                 <Link href='/images/resources/theWealthGuardDifference.pdf'>
                   <a
                     className='hover:text-red-700'
                     target='_blank'
                     rel='noreferrer'>
-                    <img
+                    <Image
                       src='/images/resources/theWealthGuardDiffernece-cover.png'
                       alt="WealthGuard's Agent Retention Flyer"
-                      className='h-40 w-28 shadow-xl hover:shadow-2xl hover:cursor-pointer mx-auto'
+                      height={160}
+                      width={112}
+                      className='h-40 w-28 shadow-xl hover:shadow-2xl hover:cursor-pointer'
                     />
                     <p className='text-sm my-2'>The WealthGuard Difference</p>
                   </a>
                 </Link>
               </div>
-              <div className='flex flex-col items-center'>
+              <div className='flex flex-col justify-center items-center text-center resource-image-container'>
                 <Link href='/images/resources/yachtInsuranceProgram.pdf'>
                   <a
                     className='hover:text-red-700'
                     target='_blank'
                     rel='noreferrer'>
-                    <img
+                    <Image
                       src='/images/resources/yachtInsuranceProgram-cover.png'
                       alt="WealthGuard's Yacht Insurance Program"
-                      className='h-40 w-28 shadow-xl hover:shadow-2xl hover:cursor-pointer mx-auto'
+                      height={160}
+                      width={112}
+                      className='h-40 w-28 shadow-black shadow-xl hover:shadow-2xl hover:cursor-pointer'
                     />
                     <p className='text-sm my-2'>Yacht Insurance Program</p>
                   </a>
