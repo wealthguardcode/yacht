@@ -30,7 +30,7 @@ export default function Home() {
             <img
               src='https://res.cloudinary.com/wealthguard-insurance-group/image/upload/v1644790049/yacht-poster_x783il.png'
               className='block md:hidden h-100'
-              alt='Men on yacht'
+              alt='Close up of Yacht on bay'
             />
             {/* https://res.cloudinary.com/wealthguard-insurance-group/image/upload/v1644790049/yacht-poster_x783il.png */}
             <VideoPlayer />
