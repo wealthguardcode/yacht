@@ -36,7 +36,7 @@ export default function Example() {
                   className='h-16'
                   src='/images/wig-logo-full.svg'
                   alt='WealthGuard Logo'
-                  height={100}
+                  height={50}
                   width={200}
                 />
               </a>

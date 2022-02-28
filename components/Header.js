@@ -54,11 +54,24 @@ export default function Header() {
                         className='block lg:hidden'
                         src='/images/wig-logo-full.svg'
                         alt='WealthGuard logo'
-                        height={100}
+                        height={50}
                         width={200}
                       />
                     </a>
                   </Link>
+                  {/* <Link href='/'>
+                    <a aria-label='Wealthguard logo'>
+                      <Image
+                        className='hidden'
+                        src='/images/wig-logo-full.svg'
+                        alt='WealthGuard logo'
+                        height={40}
+                        width={100}
+                        placeholder='blur'
+                        blurDataURL
+                      />
+                    </a>
+                  </Link> */}
                 </div>
 
                 <div className='hidden sm:ml-6 sm:flex sm:space-x-4 md:space-x-8 sm:justify-end'>
