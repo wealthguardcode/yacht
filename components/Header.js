@@ -48,7 +48,7 @@ export default function Header() {
               <div className='flex justify-between h-16'>
                 <div className='flex-shrink-0 flex items-center'>
                   <Link href='/'>
-                    <a>
+                    <a aria-label='Wealthguard logo'>
                       <img
                         className='block lg:hidden h-10 w-auto'
                         src='/images/wig-logo-full.svg'
@@ -57,7 +57,7 @@ export default function Header() {
                     </a>
                   </Link>
                   <Link href='/'>
-                    <a>
+                    <a aria-label='Wealthguard logo'>
                       <img
                         className='hidden lg:block h-12 w-auto'
                         src='/images/wig-logo-full.svg'
