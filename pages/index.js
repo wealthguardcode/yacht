@@ -245,10 +245,12 @@ export default function Home() {
                     rel='noreferrer'>
                     <Image
                       src='/images/resources/theWealthGuardDiffernece-cover.png'
+                      className='h-40 w-28 shadow-xl hover:shadow-2xl hover:cursor-pointer'
                       alt="WealthGuard's Agent Retention Flyer"
                       height={160}
                       width={112}
-                      className='h-40 w-28 shadow-xl hover:shadow-2xl hover:cursor-pointer'
+                      placeholder='blur'
+                      blurDataURL
                     />
                     <p className='text-sm my-2'>The WealthGuard Difference</p>
                   </a>
@@ -262,10 +264,12 @@ export default function Home() {
                     rel='noreferrer'>
                     <Image
                       src='/images/resources/yachtInsuranceProgram-cover.png'
+                      className='h-40 w-28 shadow-black shadow-xl hover:shadow-2xl hover:cursor-pointer'
                       alt="WealthGuard's Yacht Insurance Program"
                       height={160}
                       width={112}
-                      className='h-40 w-28 shadow-black shadow-xl hover:shadow-2xl hover:cursor-pointer'
+                      placeholder='blur'
+                      blurDataURL
                     />
                     <p className='text-sm my-2'>Yacht Insurance Program</p>
                   </a>
@@ -285,10 +289,10 @@ export default function Home() {
                 className='h-full w-full object-cover opacity-50 xl:absolute xl:inset-0'
                 src='/images/home/yacht-9.jpeg'
                 alt='Yacht docked in the sunset'
-                width={940}
-                height={490}
                 layout='fill'
                 objectFit='cover'
+                placeholder='blur'
+                blurDataURL
               />
               <div
                 aria-hidden='true'
