@@ -23,7 +23,8 @@ export default function Header() {
         <a
           href='https://www.linkedin.com/company/wealthguardinsurancegroup'
           target='_blank'
-          rel='noreferrer'>
+          rel='noreferrer'
+          aria-label='LinkedIn'>
           <SiLinkedin
             alt='LinkedIn'
             className='w-5 h-5 mx-4 text-gray-800 hover:text-gray-500 hover:cursor-pointer transform transition duration-500 hover:scale-110'
@@ -32,7 +33,8 @@ export default function Header() {
         <a
           href='https://www.facebook.com/WealthGuardig'
           target='_blank'
-          rel='noreferrer'>
+          rel='noreferrer'
+          aria-label='Facebook'>
           <SiFacebook
             alt='Facebook'
             className='w-5 h-5 text-gray-800 hover:text-gray-500 hover:cursor-pointer transform transition duration-500 hover:scale-110'
