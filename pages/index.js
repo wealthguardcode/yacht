@@ -65,10 +65,14 @@ export default function Home() {
             <div className='flex justify-center py-8 md:py-0'>
               <div className='rounded-lg border-4 border-red-500 w-72 h-80 mx-1 md:mx-3 flex flex-col justify-center items-center shadow-2xl shadow-gray-600'>
                 <div className='bg-gray-400 rounded-full p-8 md:p-10 relative border-8 border-white -mt-32 rounded-tr-3xl'>
-                  <img
+                  <Image
+                    className='h-16 md:h-20'
                     src='/images/home/bar-chart.png'
                     alt='Bar chart'
-                    className='h-16 md:h-20'
+                    height={80}
+                    width={80}
+                    placeholder='blur'
+                    blurDataURL
                   />
                 </div>
                 <a href='#smarter-stragety' className='hover:text-red-500'>
@@ -80,10 +84,14 @@ export default function Home() {
               </div>
               <div className='rounded-lg border-4 border-red-500 w-72 h-80 mx-1 md:mx-3 flex flex-col justify-center items-center shadow-2xl shadow-gray-600'>
                 <div className='bg-red-400 rounded-full p-8 md:p-10 relative border-8 border-white -mt-32 rounded-tr-3xl'>
-                  <img
+                  <Image
+                    className='h-16 md:h-20'
                     src='/images/home/hand.png'
                     alt='Hand saving money'
-                    className='h-16 md:h-20'
+                    height={80}
+                    width={80}
+                    placeholder='blur'
+                    blurDataURL
                   />
                 </div>
                 <a href='#powerful-cost' className='hover:text-red-500'>
@@ -193,10 +201,14 @@ export default function Home() {
             <div className='flex justify-center py-8 md:py-0'>
               <div className='rounded-lg border-4 border-gray-700 w-72 h-80 mx-1 md:mx-3 flex flex-col justify-center items-center shadow-2xl shadow-red-900'>
                 <div className='bg-gray-900 rounded-full p-8 md:p-10 relative border-8 border-transparent -mt-32 rounded-tr-3xl'>
-                  <img
+                  <Image
+                    className='h-16 md:h-20'
                     src='/images/home/expense.png'
                     alt='Insurance expenses'
-                    className='h-16 md:h-20'
+                    height={80}
+                    width={80}
+                    placeholder='blur'
+                    blurDataURL
                   />
                 </div>
 
@@ -207,10 +219,14 @@ export default function Home() {
               </div>
               <div className='rounded-lg border-4 border-gray-700 w-72 h-80 mx-1 md:mx-3 flex flex-col justify-center items-center shadow-2xl shadow-red-900'>
                 <div className='bg-gray-400 rounded-full p-8 md:p-10 relative border-8 border-transparent -mt-32 rounded-tr-3xl'>
-                  <img
+                  <Image
+                    className='h-16 md:h-20'
                     src='/images/home/life-insurance.png'
                     alt='Insurance'
-                    className='h-16 md:h-20'
+                    height={80}
+                    width={80}
+                    placeholder='blur'
+                    blurDataURL
                   />
                 </div>
                 <p className='text-lg md:text-xl text-center px-1 md:px-2 pt-4 text-gray-900'>
