@@ -25,12 +25,14 @@ export default function Header() {
           target='_blank'
           rel='noreferrer'>
           <SiLinkedin className='w-5 h-5 mx-4 text-gray-800 hover:text-gray-500 hover:cursor-pointer transform transition duration-500 hover:scale-110' />
+          <span className='sr-only'>LinkedIn</span>
         </a>
         <a
           href='https://www.facebook.com/WealthGuardig'
           target='_blank'
           rel='noreferrer'>
           <SiFacebook className='w-5 h-5 text-gray-800 hover:text-gray-500 hover:cursor-pointer transform transition duration-500 hover:scale-110' />
+          <span className='sr-only'>Facebook</span>
         </a>
       </div>
       <Popover as='nav' className='bg-gray-300 shadow'>
