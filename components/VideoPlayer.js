@@ -4,7 +4,7 @@ const VideoPlayer = () => {
   const videoRef = useRef()
   return (
     <CloudinaryContext cloud_name='wealthguard-insurance-group'>
-      <div>
+      <div className='hidden md:block'>
         <Video
           publicId='yacht-video-1_x2dp0w'
           width='100%'
