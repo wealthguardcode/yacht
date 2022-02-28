@@ -4,7 +4,6 @@ import { MenuIcon, XIcon } from '@heroicons/react/outline'
 import { SiLinkedin, SiFacebook } from 'react-icons/si'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-import Image from 'next/image'
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
@@ -50,28 +49,22 @@ export default function Header() {
                 <div className='flex-shrink-0 flex items-center'>
                   <Link href='/'>
                     <a aria-label='Wealthguard logo'>
-                      <Image
-                        className='block lg:hidden'
+                      <img
+                        className='block lg:hidden h-10 w-auto'
                         src='/images/wig-logo-full.svg'
                         alt='WealthGuard logo'
-                        height={50}
-                        width={200}
                       />
                     </a>
                   </Link>
-                  {/* <Link href='/'>
+                  <Link href='/'>
                     <a aria-label='Wealthguard logo'>
-                      <Image
-                        className='hidden'
+                      <img
+                        className='hidden lg:block h-12 w-auto'
                         src='/images/wig-logo-full.svg'
                         alt='WealthGuard logo'
-                        height={40}
-                        width={100}
-                        placeholder='blur'
-                        blurDataURL
                       />
                     </a>
-                  </Link> */}
+                  </Link>
                 </div>
 
                 <div className='hidden sm:ml-6 sm:flex sm:space-x-4 md:space-x-8 sm:justify-end'>

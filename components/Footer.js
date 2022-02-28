@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import Link from 'next/link'
 import { SiLinkedin, SiFacebook } from 'react-icons/si'
 
@@ -32,12 +31,10 @@ export default function Example() {
           <div className='space-y-8'>
             <Link href='/'>
               <a>
-                <Image
+                <img
                   className='h-16'
                   src='/images/wig-logo-full.svg'
                   alt='WealthGuard Logo'
-                  height={50}
-                  width={200}
                 />
               </a>
             </Link>
