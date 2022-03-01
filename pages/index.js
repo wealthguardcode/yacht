@@ -27,11 +27,17 @@ export default function Home() {
         <div className='carousel-inner carousel-wrapper'>
           {/* <!-- Single item --> */}
           <div className='carousel-item active' data-mdb-interval='36000'>
-            <img
-              src='/images/home/yacht-poster.webp'
-              className='block md:hidden h-100'
-              alt='Close up of Yacht on bay'
-            />
+            <div className='block md:hidden'>
+              <Image
+                src='/images/home/yacht-poster.webp'
+                className='h-100'
+                alt='Close up of Yacht on bay'
+                layout='responsive'
+                width={400}
+                height={300}
+              />
+            </div>
+
             {/* https://res.cloudinary.com/wealthguard-insurance-group/image/upload/v1644790049/yacht-poster_x783il.png */}
             <VideoPlayer />
           </div>
