@@ -37,8 +37,6 @@ export default function Home() {
                 height={300}
               />
             </div>
-
-            {/* https://res.cloudinary.com/wealthguard-insurance-group/image/upload/v1644790049/yacht-poster_x783il.png */}
             <VideoPlayer />
           </div>
         </div>

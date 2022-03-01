@@ -13,7 +13,7 @@ const VideoPlayer = () => {
           autoPlay
           loop
           muted
-          poster='https://res.cloudinary.com/wealthguard-insurance-group/image/upload/v1644790049/yacht-poster_x783il.png'
+          poster='https://res.cloudinary.com/wealthguard-insurance-group/image/upload/v1646152152/yacht-poster_jnwxpd.webp'
         />
       </div>
     </CloudinaryContext>
