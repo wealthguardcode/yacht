@@ -33,8 +33,8 @@ export default function Home() {
                 className='h-100'
                 alt='Close up of Yacht on bay'
                 layout='responsive'
-                width={360}
-                height={270}
+                width={1080}
+                height={609}
               />
             </div>
             <VideoPlayer />
