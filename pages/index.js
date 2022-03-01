@@ -33,6 +33,9 @@ export default function Home() {
                 className='h-100'
                 alt='Close up of Yacht on bay'
                 layout='responsive'
+                placeholder='blur'
+                priority={true}
+                blurDataURL
                 width={1080}
                 height={609}
               />
