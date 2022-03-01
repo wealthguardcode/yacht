@@ -6,6 +6,7 @@ import {
   PlusCircleIcon,
 } from '@heroicons/react/outline'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function SolutionsPage() {
   return (
@@ -350,32 +351,40 @@ export default function SolutionsPage() {
                 Insurance Programs.
               </p>
             </div>
-            <div className='flex justify-around items-center py-10 md:py-6'>
-              <div className='flex flex-col items-center py-6 md:py-2'>
+            <div className='flex justify-around items-center'>
+              <div className='flex flex-col justify-center items-center text-center py-6 md:py-2 resource-image-container'>
                 <Link href='/images/resources/theWealthGuardDifference.pdf'>
                   <a
                     className='hover:text-red-700'
                     target='_blank'
                     rel='noreferrer'>
-                    <img
+                    <Image
                       src='/images/resources/theWealthGuardDiffernece-cover.png'
+                      className='h-40 w-28 shadow-xl hover:shadow-2xl hover:cursor-pointer'
                       alt="WealthGuard's Agent Retention Flyer"
-                      className='h-40 w-28 shadow-xl hover:shadow-2xl hover:cursor-pointer mx-auto'
+                      height={160}
+                      width={112}
+                      placeholder='blur'
+                      blurDataURL
                     />
                     <p className='text-sm my-2'>The WealthGuard Difference</p>
                   </a>
                 </Link>
               </div>
-              <div className='flex flex-col items-center'>
+              <div className='flex flex-col justify-center items-center text-center resource-image-container'>
                 <Link href='/images/resources/yachtInsuranceProgram.pdf'>
                   <a
                     className='hover:text-red-700'
                     target='_blank'
                     rel='noreferrer'>
-                    <img
+                    <Image
                       src='/images/resources/yachtInsuranceProgram-cover.png'
+                      className='h-40 w-28 shadow-black shadow-xl hover:shadow-2xl hover:cursor-pointer'
                       alt="WealthGuard's Yacht Insurance Program"
-                      className='h-40 w-28 shadow-xl hover:shadow-2xl hover:cursor-pointer mx-auto'
+                      height={160}
+                      width={112}
+                      placeholder='blur'
+                      blurDataURL
                     />
                     <p className='text-sm my-2'>Yacht Insurance Program</p>
                   </a>
