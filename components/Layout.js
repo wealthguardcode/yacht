@@ -23,15 +23,6 @@ export default function Layout({ children, title, description, keywords }) {
         />
 
         <link
-          href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'
-          rel='stylesheet'
-        />
-
-        <link
-          href='https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.css'
-          rel='stylesheet'
-        />
-        <link
           rel='stylesheet'
           type='text/css'
           href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css'
@@ -50,8 +41,17 @@ export default function Layout({ children, title, description, keywords }) {
         crossorigin='anonymous'
       />
       <Script
+        href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'
+        rel='stylesheet'
+      />
+      <Script
+        href='https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.css'
+        rel='stylesheet'
+      />
+      <Script
         type='text/javascript'
-        src='https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.js'></Script>
+        src='https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.js'
+      />
 
       <Footer />
     </div>
