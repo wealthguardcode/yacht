@@ -27,10 +27,10 @@ export default function Layout({ children, title, description, keywords }) {
           rel='stylesheet'
         />
 
-        {/* <link
+        <link
           href='https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.css'
           rel='stylesheet'
-        /> */}
+        />
         <link
           rel='stylesheet'
           type='text/css'
