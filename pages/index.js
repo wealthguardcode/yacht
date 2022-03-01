@@ -28,7 +28,7 @@ export default function Home() {
           {/* <!-- Single item --> */}
           <div className='carousel-item active' data-mdb-interval='36000'>
             <img
-              src='https://res.cloudinary.com/wealthguard-insurance-group/image/upload/v1644790049/yacht-poster_x783il.png'
+              src='/images/home/yacht-poster.webp'
               className='block md:hidden h-100'
               alt='Close up of Yacht on bay'
             />
