@@ -37,7 +37,15 @@ export default function Home() {
                 height={609}
               />
             </div>
-            <VideoPlayer />
+            {/* <VideoPlayer />  */}
+            <video
+              className='img-fluid hidden md:block'
+              autoPlay
+              loop
+              muted
+              poster='/images/home/yacht-poster.webp'>
+              <source src='/images/home/yacht-video.mp4' type='video/mp4' />
+            </video>
           </div>
         </div>
       </div>
