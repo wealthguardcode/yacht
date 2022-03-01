@@ -204,7 +204,7 @@ h1.fromLeft:after {
 /* Mobile */
 @media only screen and (max-width: 600px) {
   .carousel-wrapper {
-    height: 20rem;
+    height: 18rem;
   }
 
   .flip {
