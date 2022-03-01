@@ -37,24 +37,36 @@ export default function SolutionsPage() {
         </div>
         <div className='carousel-inner carousel-wrapper'>
           <div className='carousel-item active'>
-            <img
+            <Image
               src='/images/solutions/yacht-12.jpeg'
               className='d-block w-100 h-100'
               alt='Close-up yacht sideview'
+              width={2000}
+              height={1200}
+              placeholder='blur'
+              blurDataURL
             />
           </div>
           <div className='carousel-item'>
-            <img
+            <Image
               src='/images/solutions/yacht-11.jpeg'
               className='d-block h-100'
               alt='Men on yacht'
+              width={2000}
+              height={1200}
+              placeholder='blur'
+              blurDataURL
             />
           </div>
           <div className='carousel-item'>
-            <img
+            <Image
               src='/images/home/yacht-7.jpeg'
               className='d-block h-100'
               alt='Close-up yacht front sideview'
+              width={2000}
+              height={1200}
+              placeholder='blur'
+              blurDataURL
             />
           </div>
         </div>
