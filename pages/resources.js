@@ -204,7 +204,7 @@ export default function ResourcesPage() {
             <button
               type='button'
               className='inline-flex items-center px-12 py-2 border-1 border-red-500 shadow-sm text-base font-medium rounded-2xl text-gray-700 bg-red-500 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 transform transition duration-500 hover:scale-110'>
-              Learn more
+              Contact us
             </button>
           </a>
         </Link>
