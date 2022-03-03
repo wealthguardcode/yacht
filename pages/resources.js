@@ -115,8 +115,8 @@ export default function ResourcesPage() {
                       src={resource.imgSrc}
                       alt={resource.title}
                       className='h-36 shadow-xl hover:shadow-2xl hover:cursor-pointer'
-                      height={188}
-                      width={132}
+                      height={504}
+                      width={384}
                       priority='true'
                       placeholder='blur'
                       blurDataURL
@@ -179,8 +179,8 @@ export default function ResourcesPage() {
                     src={r.imgSrc}
                     alt={r.title}
                     className='h-36 mx-auto shadow-xl hover:shadow-2xl hover:cursor-pointer'
-                    height={188}
-                    width={132}
+                    height={504}
+                    width={384}
                     priority='true'
                     placeholder='blur'
                     blurDataURL
