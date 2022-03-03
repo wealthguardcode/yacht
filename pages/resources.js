@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import Layout from '../components/Layout'
 
@@ -104,16 +105,20 @@ export default function ResourcesPage() {
             {featuredResources.map((resource) => (
               <div
                 key={resource.id}
-                className='border-3 border-red-500 rounded-xl py-4 px-8 flex flex-col resource-card'>
+                className='border-3 border-red-500 rounded-xl py-4 px-8 flex flex-col resource-card resources-page-image-container'>
                 <p className='text-md py-2 font-medium text-red-700'>
                   {resource.type}
                 </p>
                 <Link href={resource.imgSrc}>
-                  <a target='_blank' rel='noreferrer'>
-                    <img
+                  <a target='_blank' rel='noreferrer' className='mx-auto'>
+                    <Image
                       src={resource.imgSrc}
                       alt={resource.title}
-                      className='h-36 mx-auto shadow-xl hover:shadow-2xl hover:cursor-pointer'
+                      className='h-36 shadow-xl hover:shadow-2xl hover:cursor-pointer'
+                      height={160}
+                      width={112}
+                      placeholder='blur'
+                      blurDataURL
                     />
                   </a>
                 </Link>
@@ -165,14 +170,18 @@ export default function ResourcesPage() {
           {resources.map((r) => (
             <div
               key={r.id}
-              className='bg-white rounded-xl py-4 px-8 flex flex-col resource-card'>
+              className='bg-white rounded-xl py-4 px-8 flex flex-col resource-card resources-page-image-container'>
               <p className='text-md py-2 font-medium text-red-700'>{r.type}</p>
               <Link href={r.imgSrc}>
-                <a target='_blank' rel='noreferrer'>
-                  <img
+                <a target='_blank' rel='noreferrer' className='mx-auto'>
+                  <Image
                     src={r.imgSrc}
                     alt={r.title}
                     className='h-36 mx-auto shadow-xl hover:shadow-2xl hover:cursor-pointer'
+                    height={160}
+                    width={112}
+                    placeholder='blur'
+                    blurDataURL
                   />
                 </a>
               </Link>

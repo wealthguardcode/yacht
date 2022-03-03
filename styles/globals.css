@@ -153,6 +153,17 @@ h1.fromLeft:after {
 .resource-card {
   width: 300px;
 }
+
+.resources-page-image-container {
+  padding: 36px;
+}
+.resources-page-image-container span {
+  overflow: visible !important;
+}
+.resources-page-image-container img {
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.15);
+}
 /* ------------- */
 /* Media Queries */
 /* ------------- */
