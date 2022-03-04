@@ -1,4 +1,5 @@
 import { CheckIcon } from '@heroicons/react/outline'
+import Image from 'next/image'
 import Link from 'next/link'
 import Layout from '../components/Layout'
 
@@ -45,10 +46,15 @@ export default function ForAgentsPage() {
         </div>
         <div className='carousel-inner carousel-wrapper'>
           <div className='carousel-item active'>
-            <img
+            <Image
               src='/images/for-agents/agents-1.jpeg'
               className='d-block w-100'
               alt='People active and moving'
+              width={2000}
+              height={1200}
+              placeholder='blur'
+              blurDataURL
+              priority='true'
             />
             {/* <div className='carousel-caption d-none d-md-block'>
               <h5>First slide label</h5>
@@ -56,10 +62,15 @@ export default function ForAgentsPage() {
             </div> */}
           </div>
           <div className='carousel-item'>
-            <img
+            <Image
               src='/images/for-agents/agents-2.jpeg'
-              className='d-block  w-100'
+              className='d-block w-100'
               alt='Woman in front of window'
+              width={2000}
+              height={1200}
+              placeholder='blur'
+              blurDataURL
+              priority='true'
             />
             {/* <div className='carousel-caption d-none d-md-block'>
               <h5>Second slide label</h5>
@@ -67,10 +78,15 @@ export default function ForAgentsPage() {
             </div> */}
           </div>
           <div className='carousel-item'>
-            <img
+            <Image
               src='/images/for-agents/agents-3.jpeg'
-              className='d-block  w-100'
+              className='d-block w-100'
               alt='Business expenses'
+              width={2000}
+              height={1200}
+              placeholder='blur'
+              blurDataURL
+              priority='true'
             />
             {/* <div className='carousel-caption d-none d-md-block'>
               <h5>Third slide label</h5>
@@ -290,43 +306,51 @@ export default function ForAgentsPage() {
 
       {/* Resources Section */}
       <section className='bg-white'>
-        <div className='max-w-full mx-auto px-1 md:px-4 py-8 md:py-24 lg:px-8'>
+        <div className='max-w-7xl mx-auto px-1 md:px-4 py-8 md:py-24 lg:px-8'>
           <div className='grid grid-cols-1 lg:grid-cols-2'>
-            <div className='flex flex-col md:pb-5 mx-auto py-12 md:py-4'>
-              <p className='max-w-xl mx-2 px-2 font-bold text-gray-900 text-3xl border-style'>
+            <div className='flex flex-col md:pb-5'>
+              <p className='max-w-2xl mx-2 px-2 font-bold text-gray-900 text-3xl border-style'>
                 Recommended Resources
               </p>
-              <p className='max-w-xl mx-2 px-2 py-4 text-lg font-medium text-gray-900'>
+              <p className='max-w-xl mx-2 px-2 py-4 font-medium text-gray-900'>
                 Stay informed to get the most out of WealthGuard&apos;s
                 Insurance Programs.
               </p>
             </div>
-            <div className='flex justify-around items-center py-10 md:py-6'>
-              <div className='flex flex-col items-center py-6 md:py-2'>
+            <div className='flex justify-around items-center'>
+              <div className='flex flex-col justify-center items-center text-center py-6 md:py-2 resource-image-container'>
                 <Link href='/images/resources/theWealthGuardDifference.pdf'>
                   <a
                     className='hover:text-red-700'
                     target='_blank'
                     rel='noreferrer'>
-                    <img
+                    <Image
                       src='/images/resources/theWealthGuardDiffernece-cover.png'
+                      className='h-40 w-28 shadow-xl hover:shadow-2xl hover:cursor-pointer'
                       alt="WealthGuard's Agent Retention Flyer"
-                      className='h-40 w-28 shadow-xl hover:shadow-2xl hover:cursor-pointer mx-auto'
+                      height={160}
+                      width={112}
+                      placeholder='blur'
+                      blurDataURL
                     />
                     <p className='text-sm my-2'>The WealthGuard Difference</p>
                   </a>
                 </Link>
               </div>
-              <div className='flex flex-col items-center'>
+              <div className='flex flex-col justify-center items-center text-center resource-image-container'>
                 <Link href='/images/resources/yachtInsuranceProgram.pdf'>
                   <a
                     className='hover:text-red-700'
                     target='_blank'
                     rel='noreferrer'>
-                    <img
+                    <Image
                       src='/images/resources/yachtInsuranceProgram-cover.png'
+                      className='h-40 w-28 shadow-black shadow-xl hover:shadow-2xl hover:cursor-pointer'
                       alt="WealthGuard's Yacht Insurance Program"
-                      className='h-40 w-28 shadow-xl hover:shadow-2xl hover:cursor-pointer mx-auto'
+                      height={160}
+                      width={112}
+                      placeholder='blur'
+                      blurDataURL
                     />
                     <p className='text-sm my-2'>Yacht Insurance Program</p>
                   </a>

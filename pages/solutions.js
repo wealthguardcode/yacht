@@ -45,6 +45,7 @@ export default function SolutionsPage() {
               height={1200}
               placeholder='blur'
               blurDataURL
+              priority='true'
             />
           </div>
           <div className='carousel-item'>
@@ -56,6 +57,7 @@ export default function SolutionsPage() {
               height={1200}
               placeholder='blur'
               blurDataURL
+              priority='true'
             />
           </div>
           <div className='carousel-item'>
@@ -67,6 +69,7 @@ export default function SolutionsPage() {
               height={1200}
               placeholder='blur'
               blurDataURL
+              priority='true'
             />
           </div>
         </div>
