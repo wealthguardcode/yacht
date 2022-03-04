@@ -2,6 +2,7 @@ import React, { useRef } from 'react'
 import emailjs from '@emailjs/browser'
 import { toast } from 'react-toastify'
 import Layout from '../components/Layout'
+import Image from 'next/image'
 
 function resetFields() {
   document.getElementById('first-name').value = ''
@@ -42,10 +43,11 @@ export default function ContactPage() {
     <Layout title={'WIG | Contact'}>
       <div className='relative bg-gray-500'>
         <div className='absolute inset-0'>
-          <img
+          <Image
             className='w-full h-full object-cover'
             src='/images/home/yacht-6.jpeg'
             alt='Yachts docked by seaside cityscape'
+            layout='fill'
           />
           <div
             className='absolute inset-0 bg-gray-500 mix-blend-multiply'
