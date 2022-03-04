@@ -332,6 +332,7 @@ export default function ForAgentsPage() {
                       width={112}
                       placeholder='blur'
                       blurDataURL
+                      priority='true'
                     />
                     <p className='text-sm my-2'>The WealthGuard Difference</p>
                   </a>
@@ -351,6 +352,7 @@ export default function ForAgentsPage() {
                       width={112}
                       placeholder='blur'
                       blurDataURL
+                      priority='true'
                     />
                     <p className='text-sm my-2'>Yacht Insurance Program</p>
                   </a>
