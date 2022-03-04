@@ -48,6 +48,9 @@ export default function ContactPage() {
             src='/images/home/yacht-6.jpeg'
             alt='Yachts docked by seaside cityscape'
             layout='fill'
+            placeholder='blur'
+            blurDataURL
+            priority='true'
           />
           <div
             className='absolute inset-0 bg-gray-500 mix-blend-multiply'
