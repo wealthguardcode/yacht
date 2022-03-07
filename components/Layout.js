@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Script from 'next/script'
+import BackToTopButton from './BackToTopButton'
 import Footer from './Footer'
 import Header from './Header'
 
@@ -52,7 +53,7 @@ export default function Layout({ children, title, description, keywords }) {
       <Script
         type='text/javascript'
         src='https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.js'></Script>
-
+      <BackToTopButton />
       <Footer />
     </div>
   )
