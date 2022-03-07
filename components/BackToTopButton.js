@@ -37,7 +37,7 @@ export default function BackToTopButton() {
       onClick={scrollToTop}
       id='myBtn'
       title='Go to top'
-      className='inline-flex items-center p-2  rounded-full shadow-sm  bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500'>
+      className='inline-flex items-center p-2 rounded-full shadow-sm bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500'>
       <ArrowUpIcon className='h-6 w-6' aria-hidden='true' />
     </button>
   )
